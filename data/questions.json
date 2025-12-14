@@ -1,0 +1,192 @@
+[
+  {
+    "id": "r06_001",
+    "number": 1,
+    "year": "r06",
+    "category": "earthwork",
+    "difficulty": "A",
+    "title": "<ruby>土<rt>ど</rt></ruby>の<ruby>性質<rt>せいしつ</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>",
+    "text": "<ruby>土<rt>ど</rt></ruby>の<ruby>性質<rt>せいしつ</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>次<rt>つぎ</rt></ruby>の<ruby>記述<rt>きじゅつ</rt></ruby>のうち、<ruby>最<rt>もっと</rt></ruby>も<ruby>不適当<rt>ふてきとう</rt></ruby>なものはどれか。",
+    "image": "",
+    "choices": [
+      "<ruby>粘性土<rt>ねんせいど</rt></ruby>は、<ruby>砂質土<rt>さしつど</rt></ruby>に<ruby>比<rt>くら</rt></ruby>べて<ruby>透水性<rt>とうすいせい</rt></ruby>が<ruby>低<rt>ひく</rt></ruby>い。",
+      "<ruby>含水比<rt>がんすいひ</rt></ruby>とは、<ruby>土粒子<rt>どりゅうし</rt></ruby>の<ruby>質量<rt>しつりょう</rt></ruby>に<ruby>対<rt>たい</rt></ruby>する<ruby>水<rt>みず</rt></ruby>の<ruby>質量<rt>しつりょう</rt></ruby>の<ruby>比<rt>ひ</rt></ruby>を<ruby>百分率<rt>ひゃくぶんりつ</rt></ruby>で<ruby>表<rt>あらわ</rt></ruby>したものである。",
+      "<ruby>液性<rt>えきせい</rt></ruby>限界<rt>げんかい</rt>は、<ruby>土<rt>つち</rt></ruby>が<ruby>塑性状態<rt>そせいじょうたい</rt></ruby>から<ruby>液性状態<rt>えきせいじょうたい</rt></ruby>に<ruby>移行<rt>いこう</rt></ruby>する<ruby>境界<rt>きょうかい</rt></ruby>の<ruby>含水比<rt>がんすいひ</rt></ruby>をいう。",
+      "<ruby>乾燥密度<rt>かんそうみつど</rt></ruby>とは、<ruby>湿潤密度<rt>しつじゅんみつど</rt></ruby>に<ruby>含水比<rt>がんすいひ</rt></ruby>を<ruby>加<rt>くわ</rt></ruby>えたものをいう。"
+    ],
+    "correctAnswer": 4,
+    "explanation": {
+      "main": "<ruby>乾燥密度<rt>かんそうみつど</rt></ruby>は、<strong><ruby>湿潤密度<rt>しつじゅんみつど</rt></ruby>から<ruby>水<rt>みず</rt></ruby>の<ruby>質量<rt>しつりょう</rt></ruby>を<ruby>除<rt のぞ</rt></ruby>いた<ruby>値<rt>あたい</rt></ruby></strong>です。<ruby>計算式<rt>けいさんしき</rt></ruby>は、乾燥密度 = 湿潤密度 / (1 + 含水比) となります。したがって、<ruby>選択肢<rt>せんたくし</rt></ruby>4の<ruby>記述<rt>きじゅつ</rt></ruby>は<ruby>誤<rt>あやま</rt></ruby>りです。",
+      "choices": [
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>粘性土<rt>ねんせいど</rt></ruby>は<ruby>粒子<rt>りゅうし</rt></ruby>が<ruby>細<rt>こま</rt></ruby>かく<ruby>密<rt>みつ</rt></ruby>に<ruby>詰<rt>つ</rt></ruby>まっているため、<ruby>透水性<rt>とうすいせい</rt></ruby>は<ruby>砂質土<rt>さしつど</rt></ruby>よりも<ruby>著<rt>いちじる</rt></ruby>しく<ruby>低<rt>ひく</rt></ruby>くなります。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>含水比<rt>がんすいひ</rt></ruby>w = (水の質量 / 土粒子の質量) × 100(%) で<ruby>定義<rt>ていぎ</rt></ruby>されます。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>液性限界<rt>えきせいげんかい</rt></ruby>wLは、<ruby>粘性土<rt>ねんせいど</rt></ruby>の<ruby>コンシステンシー<rt>こんしすてんしー</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>指標<rt>しひょう</rt></ruby>です。",
+        "<strong><ruby>不適当<rt>ふてきとう</rt></ruby></strong>です。<ruby>乾燥密度<rt>かんそうみつど</rt></ruby>ρd = ρt / (1 + w) で<ruby>求<rt>もと</rt></ruby>められます。ρtは<ruby>湿潤密度<rt>しつじゅんみつど</rt></ruby>、wは<ruby>含水比<rt>がんすいひ</rt></ruby>（<ruby>小数<rt>しょうすう</rt></ruby>）です。"
+      ]
+    },
+    "referenceImages": [
+      {
+        "content": "<div class='diagram-placeholder'><p>📊 土の状態と密度の関係図</p><p>湿潤密度 → 水分除去 → 乾燥密度</p></div>",
+        "caption": "<ruby>土<rt>つち</rt>の密度<rt>みつど</rt>の関係<rt>かんけい</rt></ruby>"
+      }
+    ],
+    "lawReferences": [
+      {
+        "name": "JIS A 1202（土の湿潤密度試験）",
+        "content": "<ruby>土<rt>つち</rt>の密度試験<rt>みつどしけん</rt>方法<rt>ほうほう</rt>を規定<rt>きてい</rt></ruby>"
+      }
+    ],
+    "tip": "Key formula: Dry density = Wet density / (1 + water content)"
+  },
+  {
+    "id": "r06_002",
+    "number": 2,
+    "year": "r06",
+    "category": "concrete",
+    "difficulty": "A",
+    "title": "<ruby>コンクリート</ruby>の<ruby>打込<rt>うちこ</rt></ruby>みに<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>",
+    "text": "<ruby>コンクリート</ruby>の<ruby>打込<rt>うちこ</rt></ruby>みに<ruby>関<rt>かん</rt></ruby>する<ruby>次<rt>つぎ</rt></ruby>の<ruby>記述<rt>きじゅつ</rt></ruby>のうち、<ruby>最<rt>もっと</rt></ruby>も<ruby>不適当<rt>ふてきとう</rt></ruby>なものはどれか。",
+    "image": "",
+    "choices": [
+      "<ruby>コンクリート</ruby>の<ruby>打込<rt>うちこ</rt></ruby>みは、<ruby>練混<rt>ねりま</rt></ruby>ぜ<ruby>開始<rt>かいし</rt></ruby>から<ruby>打込<rt>うちこ</rt></ruby>み<ruby>終了<rt>しゅうりょう</rt></ruby>までを120<ruby>分<rt>ふん</rt></ruby><ruby>以内<rt>いない</rt></ruby>とする。",
+      "<ruby>打込<rt>うちこ</rt></ruby>み<ruby>時<rt>じ</rt></ruby>のコンクリートの<ruby>落下高<rt>らっかだか</rt></ruby>さは、<ruby>一般<rt>いっぱん</rt></ruby>に1.5m<ruby>以下<rt>いか</rt></ruby>とする。",
+      "<ruby>コンクリート</ruby>の<ruby>締固<rt>しめかた</rt></ruby>めには、<ruby>棒状<rt>ぼうじょう</rt></ruby>バイブレータを<ruby>使用<rt>しよう</rt></ruby>することが<ruby>標準<rt>ひょうじゅん</rt></ruby>である。",
+      "<ruby>打込<rt>うちこ</rt></ruby>み<ruby>中<rt>ちゅう</rt></ruby>にブリーディング<ruby>水<rt>すい</rt></ruby>が<ruby>表面<rt>ひょうめん</rt></ruby>に<ruby>現<rt>あらわ</rt></ruby>れた<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>速<rt>すみ</rt></ruby>やかに<ruby>除去<rt>じょきょ</rt></ruby>する。"
+    ],
+    "correctAnswer": 1,
+    "explanation": {
+      "main": "<ruby>コンクリート</ruby>の<ruby>打込<rt>うちこ</rt></ruby>みは、<strong><ruby>練混<rt>ねりま</rt></ruby>ぜ<ruby>開始<rt>かいし</rt></ruby>から<ruby>打込<rt>うちこ</rt></ruby>み<ruby>終了<rt>しゅうりょう</rt></ruby>まで<ruby>外気温<rt>がいきおん</rt></ruby>が25℃<ruby>未満<rt>みまん</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は120<ruby>分<rt>ふん</rt></ruby>、25℃<ruby>以上<rt>いじょう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は90<ruby>分<rt>ふん</rt></ruby><ruby>以内<rt>いない</rt></ruby></strong>とする<ruby>必要<rt>ひつよう</rt></ruby>があります。<ruby>選択肢<rt>せんたくし</rt></ruby>1は<ruby>温度<rt>おんど</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>を<ruby>考慮<rt>こうりょ</rt></ruby>していないため<ruby>不適当<rt>ふてきとう</rt></ruby>です。",
+      "choices": [
+        "<strong><ruby>不適当<rt>ふてきとう</rt></ruby></strong>です。<ruby>外気温<rt>がいきおん</rt></ruby>25℃<ruby>以上<rt>いじょう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は90<ruby>分<rt>ふん</rt></ruby><ruby>以内<rt>いない</rt></ruby>、25℃<ruby>未満<rt>みまん</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は120<ruby>分<rt>ふん</rt></ruby><ruby>以内<rt>いない</rt></ruby>とする<ruby>必要<rt>ひつよう</rt></ruby>があります。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>材料分離<rt>ざいりょうぶんり</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐため、<ruby>落下高<rt>らっかだか</rt></ruby>さは1.5m<ruby>以下<rt>いか</rt></ruby>とするのが<ruby>標準<rt>ひょうじゅん</rt></ruby>です。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>棒状<rt>ぼうじょう</rt></ruby>バイブレータ（<ruby>内部<rt>ないぶ</rt></ruby>振動機<rt>しんどうき</rt>）は<ruby>最<rt>もっと</rt></ruby>も<ruby>一般的<rt>いっぱんてき</rt></ruby>な<ruby>締固<rt>しめかた</rt></ruby>め<ruby>方法<rt>ほうほう</rt></ruby>です。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。ブリーディング<ruby>水<rt>すい</rt></ruby>は<ruby>強度低下<rt>きょうどていか</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>となるため、<ruby>速<rt>すみ</rt></ruby>やかに<ruby>除去<rt>じょきょ</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>があります。"
+      ]
+    },
+    "referenceImages": [
+      {
+        "content": "<div class='diagram-placeholder'><p>🏗️ コンクリート打設の時間制限</p><p>外気温 < 25℃：120分以内<br>外気温 ≥ 25℃：90分以内</p></div>",
+        "caption": "<ruby>打込<rt>うちこ</rt>み時間<rt>じかん</rt>の基準<rt>きじゅん</rt></ruby>"
+      }
+    ],
+    "lawReferences": [
+      {
+        "name": "土木学会 コンクリート標準示方書",
+        "content": "<ruby>コンクリート</ruby>の<ruby>打込<rt>うちこ</rt>み時間制限<rt>じかんせいげん</rt>を規定<rt>きてい</rt></ruby>"
+      }
+    ],
+    "tip": "Remember: Hot weather (≥25°C) = 90 min max. Cool weather (<25°C) = 120 min max."
+  },
+  {
+    "id": "r06_003",
+    "number": 3,
+    "year": "r06",
+    "category": "planning",
+    "difficulty": "B",
+    "title": "<ruby>工程管理<rt>こうていかんり</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>",
+    "text": "<ruby>工程管理<rt>こうていかんり</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>次<rt>つぎ</rt></ruby>の<ruby>記述<rt>きじゅつ</rt></ruby>のうち、<ruby>最<rt>もっと</rt></ruby>も<ruby>不適当<rt>ふてきとう</rt></ruby>なものはどれか。",
+    "image": "",
+    "choices": [
+      "ネットワーク<ruby>式<rt>しき</rt></ruby><ruby>工程表<rt>こうていひょう</rt></ruby>は、<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>相互関係<rt>そうごかんけい</rt></ruby>や<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>明確<rt>めいかく</rt></ruby>にできる。",
+      "クリティカルパスとは、ネットワーク<ruby>式<rt>しき</rt></ruby><ruby>工程表<rt>こうていひょう</rt></ruby>で<ruby>最<rt>もっと</rt></ruby>も<ruby>所要日数<rt>しょようにっすう</rt></ruby>の<ruby>少<rt>すく</rt></ruby>ない<ruby>経路<rt>けいろ</rt></ruby>のことである。",
+      "バーチャート<ruby>工程表<rt>こうていひょう</rt></ruby>は、<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>開始<rt>かいし</rt></ruby>・<ruby>終了時期<rt>しゅうりょうじき</rt></ruby>が<ruby>明確<rt>めいかく</rt></ruby>で、<ruby>理解<rt>りかい</rt></ruby>しやすい。",
+      "トータルフロートとは、その<ruby>作業<rt>さぎょう</rt></ruby>に<ruby>使用<rt>しよう</rt></ruby>できる<ruby>余裕時間<rt>よゆうじかん</rt></ruby>のことである。"
+    ],
+    "correctAnswer": 2,
+    "explanation": {
+      "main": "クリティカルパスとは、ネットワーク<ruby>式<rt>しき</rt></ruby><ruby>工程表<rt>こうていひょう</rt></ruby>において<strong><ruby>最<rt>もっと</rt></ruby>も<ruby>所要日数<rt>しょようにっすう</rt></ruby>の<ruby>長<rt>なが</rt></ruby>い<ruby>経路<rt>けいろ</rt></ruby></strong>のことです。この<ruby>経路<rt>けいろ</rt></ruby>が<ruby>工期全体<rt>こうきぜんたい</rt></ruby>を<ruby>決定<rt>けってい</rt></ruby>するため、<ruby>遅延<rt>ちえん</rt></ruby>すると<ruby>全体工期<rt>ぜんたいこうき</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>します。",
+      "choices": [
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。ネットワーク<ruby>式<rt>しき</rt></ruby><ruby>工程表<rt>こうていひょう</rt></ruby>（PERT、CPM）は<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>前後関係<rt>ぜんごかんけい</rt></ruby>を<ruby>明確<rt>めいかく</rt></ruby>に<ruby>表現<rt>ひょうげん</rt></ruby>できます。",
+        "<strong><ruby>不適当<rt>ふてきとう</rt></ruby></strong>です。クリティカルパスは<ruby>最<rt>もっと</rt></ruby>も<ruby>所要日数<rt>しょようにっすう</rt></ruby>の<ruby>長<rt>なが</rt></ruby>い<ruby>経路<rt>けいろ</rt></ruby>であり、<ruby>余裕時間<rt>よゆうじかん</rt></ruby>がゼロの<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>連続<rt>れんぞく</rt></ruby>です。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。バーチャート<ruby>工程表<rt>こうていひょう</rt></ruby>（ガントチャート）は<ruby>視覚的<rt>しかくてき</rt></ruby>で<ruby>分<rt>わ</rt></ruby>かりやすいのが<ruby>特徴<rt>とくちょう</rt></ruby>です。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。トータルフロートは、その<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れても<ruby>工期全体<rt>こうきぜんたい</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>しない<ruby>余裕時間<rt>よゆうじかん</rt></ruby>です。"
+      ]
+    },
+    "referenceImages": [
+      {
+        "content": "<div class='diagram-placeholder'><p>📊 ネットワーク工程表の例</p><p>Critical Path = 最長経路（余裕時間0）</p></div>",
+        "caption": "<ruby>クリティカルパス</ruby>の<ruby>概念図<rt>がいねんず</rt></ruby>"
+      }
+    ],
+    "lawReferences": [],
+    "tip": "Key concept: Critical Path = LONGEST path (not shortest!). Zero float time."
+  },
+  {
+    "id": "r06_004",
+    "number": 4,
+    "year": "r06",
+    "category": "law",
+    "difficulty": "A",
+    "title": "<ruby>建設業法<rt>けんせつぎょうほう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>",
+    "text": "<ruby>建設業法<rt>けんせつぎょうほう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>次<rt>つぎ</rt></ruby>の<ruby>記述<rt>きじゅつ</rt></ruby>のうち、<ruby>最<rt>もっと</rt></ruby>も<ruby>不適当<rt>ふてきとう</rt></ruby>なものはどれか。",
+    "image": "",
+    "choices": [
+      "<ruby>建設業<rt>けんせつぎょう</rt></ruby>を<ruby>営<rt>いとな</rt></ruby>もうとする<ruby>者<rt>もの</rt></ruby>は、<ruby>軽微<rt>けいび</rt></ruby>な<ruby>建設工事<rt>けんせつこうじ</rt></ruby>のみを<ruby>請<rt>う</rt></ruby>け<ruby>負<rt>お</rt></ruby>う<ruby>場合<rt>ばあい</rt></ruby>を<ruby>除<rt>のぞ</rt></ruby>き、<ruby>許可<rt>きょか</rt></ruby>を<ruby>受<rt>う</rt></ruby>けなければならない。",
+      "<ruby>主任技術者<rt>しゅにんぎじゅつしゃ</rt></ruby>は、<ruby>全<rt>すべ</rt></ruby>ての<ruby>建設工事<rt>けんせつこうじ</rt></ruby>において<ruby>配置<rt>はいち</rt></ruby>しなければならない。",
+      "<ruby>監理技術者<rt>かんりぎじゅつしゃ</rt></ruby>は、<ruby>発注者<rt>はっちゅうしゃ</rt></ruby>から<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>請<rt>う</rt></ruby>け<ruby>負<rt>お</rt></ruby>った<ruby>建設工事<rt>けんせつこうじ</rt></ruby>で、<ruby>下請契約<rt>したうけけいやく</rt></ruby>の<ruby>請負代金<rt>うけおいだいきん</rt></ruby>の<ruby>総額<rt>そうがく</rt></ruby>が4,000<ruby>万円<rt>まんえん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>に<ruby>配置<rt>はいち</rt></ruby>する。",
+      "<ruby>技術者<rt>ぎじゅつしゃ</rt></ruby>は、<ruby>工事現場<rt>こうじげんば</rt></ruby>における<ruby>建設工事<rt>けんせつこうじ</rt></ruby>の<ruby>施工<rt>せこう</rt></ruby>に<ruby>従事<rt>じゅうじ</rt></ruby>する<ruby>者<rt>もの</rt></ruby>の<ruby>技術上<rt>ぎじゅつじょう</rt></ruby>の<ruby>指導監督<rt>しどうかんとく</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う。"
+    ],
+    "correctAnswer": 3,
+    "explanation": {
+      "main": "<ruby>監理技術者<rt>かんりぎじゅつしゃ</rt></ruby>の<ruby>配置<rt>はいち</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>なのは、<strong><ruby>発注者<rt>はっちゅうしゃ</rt></ruby>から<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>請<rt>う</rt></ruby>け<ruby>負<rt>お</rt></ruby>った<ruby>建設工事<rt>けんせつこうじ</rt></ruby>で、<ruby>下請契約<rt>したうけけいやく</rt></ruby>の<ruby>請負代金<rt>うけおいだいきん</rt></ruby>の<ruby>総額<rt>そうがく</rt></ruby>が4,500<ruby>万円<rt>まんえん</rt></ruby>（<ruby>建築一式工事<rt>けんちくいっしきこうじ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は7,000<ruby>万円<rt>まんえん</rt></ruby>）<ruby>以上<rt>いじょう</rt></ruby></strong>の<ruby>場合<rt>ばあい</rt></ruby>です。<ruby>選択肢<rt>せんたくし</rt></ruby>3の4,000<ruby>万円<rt>まんえん</rt></ruby>は<ruby>誤<rt>あやま</rt></ruby>りです。",
+      "choices": [
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>建設業法<rt>けんせつぎょうほう</rt></ruby>第3<ruby>条<rt>じょう</rt></ruby>により、<ruby>軽微<rt>けいび</rt></ruby>な<ruby>工事<rt>こうじ</rt></ruby>を<ruby>除<rt>のぞ</rt></ruby>き<ruby>許可<rt>きょか</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>建設業法<rt>けんせつぎょうほう</rt></ruby>第26<ruby>条<rt>じょう</rt></ruby>により、<ruby>全<rt>すべ</rt></ruby>ての<ruby>建設工事<rt>けんせつこうじ</rt></ruby>に<ruby>主任技術者<rt>しゅにんぎじゅつしゃ</rt></ruby>の<ruby>配置<rt>はいち</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。",
+        "<strong><ruby>不適当<rt>ふてきとう</rt></ruby></strong>です。<ruby>正<rt>ただ</rt></ruby>しくは4,500<ruby>万円<rt>まんえん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>（<ruby>建築一式<rt>けんちくいっしき</rt></ruby>は7,000<ruby>万円<rt>まんえん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>）です。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>技術者<rt>ぎじゅつしゃ</rt></ruby>の<ruby>職務<rt>しょくむ</rt></ruby>として、<ruby>技術上<rt>ぎじゅつじょう</rt></ruby>の<ruby>指導監督<rt>しどうかんとく</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>います。"
+      ]
+    },
+    "referenceImages": [
+      {
+        "content": "<div class='diagram-placeholder'><p>⚖️ 監理技術者配置の基準</p><p>下請総額 ≥ 4,500万円（土木一式）<br>下請総額 ≥ 7,000万円（建築一式）</p></div>",
+        "caption": "<ruby>監理技術者<rt>かんりぎじゅつしゃ</rt>配置基準<rt>はいちきじゅん</rt></ruby>"
+      }
+    ],
+    "lawReferences": [
+      {
+        "name": "建設業法 第26条",
+        "content": "<ruby>主任技術者<rt>しゅにんぎじゅつしゃ</rt>及<rt>およ</rt>び監理技術者<rt>かんりぎじゅつしゃ</rt>の配置<rt>はいち</rt>を規定<rt>きてい</rt></ruby>"
+      }
+    ],
+    "tip": "Key: Supervisor Engineer required when subcontract total ≥ ¥45M (¥70M for architecture)"
+  },
+  {
+    "id": "r06_005",
+    "number": 5,
+    "year": "r06",
+    "category": "safety",
+    "difficulty": "A",
+    "title": "<ruby>労働安全衛生法<rt>ろうどうあんぜんえいせいほう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>",
+    "text": "<ruby>労働安全衛生法<rt>ろうどうあんぜんえいせいほう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>次<rt>つぎ</rt></ruby>の<ruby>記述<rt>きじゅつ</rt></ruby>のうち、<ruby>最<rt>もっと</rt></ruby>も<ruby>不適当<rt>ふてきとう</rt></ruby>なものはどれか。",
+    "image": "",
+    "choices": [
+      "<ruby>事業者<rt>じぎょうしゃ</rt></ruby>は、<ruby>高<rt>たか</rt></ruby>さ2m<ruby>以上<rt>いじょう</rt></ruby>の<ruby>箇所<rt>かしょ</rt></ruby>で<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>場合<rt>ばあい</rt></ruby>、<ruby>墜落<rt>ついらく</rt></ruby><ruby>防止<rt>ぼうし</rt></ruby>のための<ruby>設備<rt>せつび</rt></ruby>を<ruby>設<rt>もう</rt></ruby>けなければならない。",
+      "<ruby>車両系建設機械<rt>しゃりょうけいけんせつきかい</rt></ruby>を<ruby>用<rt>もち</rt></ruby>いて<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うときは、<ruby>一定<rt>いってい</rt></ruby>の<ruby>合図<rt>あいず</rt></ruby>を<ruby>定<rt>さだ</rt></ruby>め、<ruby>合図<rt>あいず</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>者<rt>もの</rt></ruby>を<ruby>指名<rt>しめい</rt></ruby>する。",
+      "<ruby>事業者<rt>じぎょうしゃ</rt></ruby>は、<ruby>酸素欠乏危険場所<rt>さんそけつぼうきけんばしょ</rt></ruby>で<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うときは、<ruby>作業主任者<rt>さぎょうしゅにんしゃ</rt></ruby>を<ruby>選任<rt>せんにん</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>はない。",
+      "<ruby>地山<rt>じやま</rt></ruby>の<ruby>掘削作業<rt>くっさくさぎょう</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>場合<rt>ばあい</rt></ruby>、<ruby>地山<rt>じやま</rt></ruby>の<ruby>崩壊<rt>ほうかい</rt></ruby>または<ruby>土石<rt>どせき</rt></ruby>の<ruby>落下<rt>らっか</rt></ruby>による<ruby>危険<rt>きけん</rt></ruby>を<ruby>防止<rt>ぼうし</rt></ruby>するため、<ruby>点検<rt>てんけん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>わなければならない。"
+    ],
+    "correctAnswer": 3,
+    "explanation": {
+      "main": "<ruby>酸素欠乏危険場所<rt>さんそけつぼうきけんばしょ</rt></ruby>における<ruby>作業<rt>さぎょう</rt></ruby>では、<strong><ruby>必<rt>かなら</rt></ruby>ず<ruby>酸素欠乏危険作業主任者<rt>さんそけつぼうきけんさぎょうしゅにんしゃ</rt></ruby>を<ruby>選任<rt>せんにん</rt></ruby>しなければなりません</strong>。これは<ruby>労働安全衛生法<rt>ろうどうあんぜんえいせいほう</rt></ruby>で<ruby>義務付<rt>ぎむづ</rt></ruby>けられています。",
+      "choices": [
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>高<rt>たか</rt></ruby>さ2m<ruby>以上<rt>いじょう</rt></ruby>の<ruby>作業<rt>さぎょう</rt></ruby>では、<ruby>作業床<rt>さぎょうしょう</rt></ruby>の<ruby>設置<rt>せっち</rt></ruby>、<ruby>囲<rt>かこ</rt></ruby>い、<ruby>手<rt>て</rt></ruby>すり、<ruby>覆<rt>おお</rt></ruby>い<ruby>等<rt>とう</rt></ruby>を<ruby>設<rt>もう</rt></ruby>ける<ruby>必要<rt>ひつよう</rt></ruby>があります。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>車両系建設機械<rt>しゃりょうけいけんせつきかい</rt></ruby>を<ruby>使用<rt>しよう</rt></ruby>する<ruby>際<rt>さい</rt></ruby>は、<ruby>合図<rt>あいず</rt></ruby>の<ruby>統一<rt>とういつ</rt></ruby>と<ruby>合図者<rt>あいずしゃ</rt></ruby>の<ruby>指名<rt>しめい</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。",
+        "<strong><ruby>不適当<rt>ふてきとう</rt></ruby></strong>です。<ruby>酸素欠乏危険場所<rt>さんそけつぼうきけんばしょ</rt></ruby>では、<ruby>酸素欠乏危険作業主任者<rt>さんそけつぼうきけんさぎょうしゅにんしゃ</rt></ruby>を<ruby>必<rt>かなら</rt></ruby>ず<ruby>選任<rt>せんにん</rt></ruby>しなければなりません。",
+        "<strong><ruby>適当<rt>てきとう</rt></ruby></strong>です。<ruby>地山<rt>じやま</rt></ruby>の<ruby>掘削<rt>くっさく</rt></ruby>では、<ruby>定期的<rt>ていきてき</rt></ruby>な<ruby>点検<rt>てんけん</rt></ruby>により<ruby>崩壊<rt>ほうかい</rt></ruby>や<ruby>落下<rt>らっか</rt></ruby>の<ruby>危険<rt>きけん</rt></ruby>を<ruby>防止<rt>ぼうし</rt></ruby>します。"
+      ]
+    },
+    "referenceImages": [
+      {
+        "content": "<div class='diagram-placeholder'><p>⚠️ 酸素欠乏危険場所の例</p><p>・マンホール内<br>・トンネル工事<br>・地下ピット等</p></div>",
+        "caption": "<ruby>酸素欠乏危険場所<rt>さんそけつぼうきけんばしょ</rt>の例<rt>れい</rt></ruby>"
+      }
+    ],
+    "lawReferences": [
+      {
+        "name": "労働安全衛生法 第14条",
+        "content": "<ruby>作業主任者<rt>さぎょうしゅにんしゃ</rt>の選任<rt>せんにん</rt>を規定<rt>きてい</rt></ruby>"
+      }
+    ],
+    "tip": "Key: Always appoint oxygen deficiency supervisor for confined spaces!"
+  }
+]

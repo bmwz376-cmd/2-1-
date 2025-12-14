@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問題一覧 - 2級土木施工管理技士</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header header-compact">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> ホームへ戻る
+            </a>
+            <div class="header-title-group">
+                <i class="fas fa-hard-hat header-icon-small"></i>
+                <h1>問題一覧</h1>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="filter-section">
+                <h2 class="filter-title"><i class="fas fa-filter"></i> 絞り込み条件</h2>
+                
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="yearFilter">
+                            <i class="fas fa-calendar-alt"></i>
+                            年度で絞り込む:
+                        </label>
+                        <select id="yearFilter" class="filter-select">
+                            <option value="all">全て表示</option>
+                            <option value="r06">令和6年度（2024年）</option>
+                            <option value="r05">令和5年度（2023年）</option>
+                            <option value="r04">令和4年度（2022年）</option>
+                            <option value="r03">令和3年度（2021年）</option>
+                            <option value="r02">令和2年度（2020年）</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="categoryFilter">
+                            <i class="fas fa-layer-group"></i>
+                            分野で絞り込む:
+                        </label>
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all">全て表示</option>
+                            <option value="earthwork">土工</option>
+                            <option value="concrete">コンクリート工</option>
+                            <option value="planning">施工計画</option>
+                            <option value="law">法規</option>
+                            <option value="safety">安全管理</option>
+                            <option value="quality">品質管理</option>
+                            <option value="machinery">建設機械</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="difficultyFilter">
+                            <i class="fas fa-signal"></i>
+                            重要度:
+                        </label>
+                        <select id="difficultyFilter" class="filter-select">
+                            <option value="all">全て表示</option>
+                            <option value="A">A: 頻出問題</option>
+                            <option value="B">B: 標準問題</option>
+                            <option value="C">C: 難問</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="statusFilter">
+                            <i class="fas fa-clipboard-check"></i>
+                            学習状況:
+                        </label>
+                        <select id="statusFilter" class="filter-select">
+                            <option value="all">全て表示</option>
+                            <option value="unanswered">未解答</option>
+                            <option value="correct">正解済み</option>
+                            <option value="incorrect">不正解</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="キーワードで検索（例：コンクリート、打設、養生）">
+                    <button id="clearSearch" class="clear-btn" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="questions-stats-bar">
+                <div class="stats-left">
+                    <p>表示中: <span id="displayCount" class="count-highlight">0</span> / <span id="totalCount">250</span> 問</p>
+                </div>
+                <div class="stats-right">
+                    <button id="resetFilters" class="btn-small btn-outline">
+                        <i class="fas fa-redo"></i> フィルタをリセット
+                    </button>
+                </div>
+            </div>
+
+            <div id="questionsList" class="questions-list">
+                <!-- 問題リストがJavaScriptで動的に生成されます -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>問題を読み込み中...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 2級土木施工管理技士 過去問題集</p>
+                <p class="footer-sub">Produced by NL-DG Co., Ltd. & Narukawa Co., Ltd.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+</html>
