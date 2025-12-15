@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <!-- Background -->
+  <rect width="600" height="300" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    土の密度の関係
+  </text>
+  
+  <!-- Wet Density Box -->
+  <g transform="translate(50, 80)">
+    <rect width="140" height="160" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="8"/>
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+      湿潤密度 ρt
+    </text>
+    
+    <!-- Soil particles -->
+    <rect x="20" y="50" width="100" height="60" fill="#92400e" opacity="0.7"/>
+    <text x="70" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      土粒子
+    </text>
+    
+    <!-- Water -->
+    <rect x="20" y="110" width="100" height="40" fill="#0ea5e9" opacity="0.6"/>
+    <text x="70" y="135" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      水
+    </text>
+  </g>
+  
+  <!-- Arrow -->
+  <g transform="translate(230, 150)">
+    <line x1="0" y1="0" x2="80" y2="0" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="40" y="-10" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">
+      水分除去
+    </text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Dry Density Box -->
+  <g transform="translate(350, 80)">
+    <rect width="140" height="160" fill="#f0fdf4" stroke="#10b981" stroke-width="2" rx="8"/>
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+      乾燥密度 ρd
+    </text>
+    
+    <!-- Soil particles only -->
+    <rect x="20" y="50" width="100" height="100" fill="#92400e" opacity="0.7"/>
+    <text x="70" y="105" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      土粒子のみ
+    </text>
+  </g>
+  
+  <!-- Formula -->
+  <g transform="translate(300, 260)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1e40af" font-weight="bold">
+      ρd = ρt / (1 + w)
+    </text>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">
+      w = 含水比（小数）
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <!-- 背景 -->
+  <rect width="700" height="500" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">品質管理の基本概念</text>
+  
+  <!-- PDCAサイクル -->
+  <g id="pdca_cycle">
+    <text x="170" y="60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#3498db">PDCAサイクル</text>
+    
+    <!-- 円形の背景 -->
+    <circle cx="170" cy="180" r="110" fill="none" stroke="#bdc3c7" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Plan -->
+    <circle cx="170" cy="90" r="35" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+    <text x="170" y="90" font-family="Arial, sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Plan</text>
+    <text x="170" y="105" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">計画</text>
+    
+    <!-- Do -->
+    <circle cx="260" cy="180" r="35" fill="#27ae60" stroke="#229954" stroke-width="3"/>
+    <text x="260" y="180" font-family="Arial, sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Do</text>
+    <text x="260" y="195" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">実行</text>
+    
+    <!-- Check -->
+    <circle cx="170" cy="270" r="35" fill="#f39c12" stroke="#d68910" stroke-width="3"/>
+    <text x="170" y="270" font-family="Arial, sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Check</text>
+    <text x="170" y="285" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">評価</text>
+    
+    <!-- Action -->
+    <circle cx="80" cy="180" r="35" fill="#e74c3c" stroke="#c0392b" stroke-width="3"/>
+    <text x="80" y="180" font-family="Arial, sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Action</text>
+    <text x="80" y="195" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">改善</text>
+    
+    <!-- 矢印 -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+        <polygon points="0 0, 10 5, 0 10" fill="#7f8c8d" />
+      </marker>
+    </defs>
+    
+    <path d="M 195 115 L 235 155" stroke="#7f8c8d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 235 205 L 195 245" stroke="#7f8c8d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 145 245 L 105 205" stroke="#7f8c8d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 105 155 L 145 115" stroke="#7f8c8d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <text x="170" y="330" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" text-anchor="middle">継続的改善のサイクル</text>
+  </g>
+  
+  <!-- 精度と正確さ -->
+  <g id="precision_accuracy">
+    <text x="500" y="60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#9b59b6">精度と正確さの違い</text>
+    
+    <!-- 高精度・高正確さ -->
+    <g id="high_both">
+      <circle cx="420" cy="130" r="30" fill="none" stroke="#2c3e50" stroke-width="2"/>
+      <circle cx="420" cy="130" r="20" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="420" cy="130" r="10" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="418" cy="128" r="2" fill="#27ae60"/>
+      <circle cx="422" cy="132" r="2" fill="#27ae60"/>
+      <circle cx="420" cy="130" r="2" fill="#27ae60"/>
+      <circle cx="419" cy="131" r="2" fill="#27ae60"/>
+      <text x="420" y="175" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="bold" text-anchor="middle">高精度・高正確さ</text>
+    </g>
+    
+    <!-- 高精度・低正確さ -->
+    <g id="high_precision_low_accuracy">
+      <circle cx="550" cy="130" r="30" fill="none" stroke="#2c3e50" stroke-width="2"/>
+      <circle cx="550" cy="130" r="20" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="550" cy="130" r="10" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="563" cy="115" r="2" fill="#e67e22"/>
+      <circle cx="565" cy="113" r="2" fill="#e67e22"/>
+      <circle cx="564" cy="114" r="2" fill="#e67e22"/>
+      <circle cx="566" cy="116" r="2" fill="#e67e22"/>
+      <text x="550" y="175" font-family="Arial, sans-serif" font-size="10" fill="#e67e22" font-weight="bold" text-anchor="middle">高精度・低正確さ</text>
+      <text x="550" y="188" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d" text-anchor="middle">(ばらつき小・真値から離れる)</text>
+    </g>
+    
+    <!-- 低精度・高正確さ -->
+    <g id="low_precision_high_accuracy">
+      <circle cx="420" cy="250" r="30" fill="none" stroke="#2c3e50" stroke-width="2"/>
+      <circle cx="420" cy="250" r="20" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="420" cy="250" r="10" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="425" cy="245" r="2" fill="#3498db"/>
+      <circle cx="415" cy="255" r="2" fill="#3498db"/>
+      <circle cx="422" cy="252" r="2" fill="#3498db"/>
+      <circle cx="418" cy="248" r="2" fill="#3498db"/>
+      <text x="420" y="295" font-family="Arial, sans-serif" font-size="10" fill="#3498db" font-weight="bold" text-anchor="middle">低精度・高正確さ</text>
+      <text x="420" y="308" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d" text-anchor="middle">(ばらつき大・真値に近い)</text>
+    </g>
+    
+    <!-- 低精度・低正確さ -->
+    <g id="low_both">
+      <circle cx="550" cy="250" r="30" fill="none" stroke="#2c3e50" stroke-width="2"/>
+      <circle cx="550" cy="250" r="20" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="550" cy="250" r="10" fill="none" stroke="#95a5a6" stroke-width="1"/>
+      <circle cx="565" cy="235" r="2" fill="#e74c3c"/>
+      <circle cx="540" cy="260" r="2" fill="#e74c3c"/>
+      <circle cx="560" cy="255" r="2" fill="#e74c3c"/>
+      <circle cx="545" cy="240" r="2" fill="#e74c3c"/>
+      <text x="550" y="295" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="bold" text-anchor="middle">低精度・低正確さ</text>
+    </g>
+  </g>
+  
+  <!-- 管理図の説明 -->
+  <g id="control_chart">
+    <rect x="50" y="370" width="600" height="110" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="5"/>
+    
+    <text x="350" y="395" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50" text-anchor="middle">【その他の重要用語】</text>
+    
+    <text x="70" y="420" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">• 標準偏差: データのばらつきの程度を表す指標</text>
+    <text x="70" y="440" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">• 管理図: 工程が安定しているかを判定するグラフ</text>
+    <text x="70" y="460" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c" font-weight="bold">• 精度 ≠ 正確さ（両者は異なる概念）</text>
+  </g>
+</svg>

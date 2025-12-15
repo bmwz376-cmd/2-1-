@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <!-- 背景 -->
+  <rect width="700" height="450" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">施工計画の重要性</text>
+  
+  <!-- 施工計画の4要素（QCDS） -->
+  <g id="qcds">
+    <text x="350" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#3498db">施工計画の目的（QCDS）</text>
+    
+    <!-- Quality -->
+    <rect x="50" y="80" width="140" height="100" fill="#d5f4e6" stroke="#27ae60" stroke-width="3" rx="5"/>
+    <text x="120" y="110" font-family="Arial, sans-serif" font-size="18" fill="#27ae60" font-weight="bold" text-anchor="middle">Q</text>
+    <text x="120" y="132" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">Quality</text>
+    <text x="120" y="152" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" text-anchor="middle">品質確保</text>
+    <text x="120" y="170" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">所定の品質を</text>
+    <text x="120" y="183" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">確保する</text>
+    
+    <!-- Cost -->
+    <rect x="210" y="80" width="140" height="100" fill="#fef5e7" stroke="#f39c12" stroke-width="3" rx="5"/>
+    <text x="280" y="110" font-family="Arial, sans-serif" font-size="18" fill="#f39c12" font-weight="bold" text-anchor="middle">C</text>
+    <text x="280" y="132" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">Cost</text>
+    <text x="280" y="152" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" text-anchor="middle">コスト管理</text>
+    <text x="280" y="170" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">予算内で</text>
+    <text x="280" y="183" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">完成させる</text>
+    
+    <!-- Delivery -->
+    <rect x="370" y="80" width="140" height="100" fill="#ebf5fb" stroke="#3498db" stroke-width="3" rx="5"/>
+    <text x="440" y="110" font-family="Arial, sans-serif" font-size="18" fill="#3498db" font-weight="bold" text-anchor="middle">D</text>
+    <text x="440" y="132" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">Delivery</text>
+    <text x="440" y="152" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" text-anchor="middle">工期管理</text>
+    <text x="440" y="170" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">所定工期内に</text>
+    <text x="440" y="183" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">完成させる</text>
+    
+    <!-- Safety -->
+    <rect x="530" y="80" width="140" height="100" fill="#fadbd8" stroke="#e74c3c" stroke-width="3" rx="5"/>
+    <text x="600" y="110" font-family="Arial, sans-serif" font-size="18" fill="#e74c3c" font-weight="bold" text-anchor="middle">S</text>
+    <text x="600" y="132" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">Safety</text>
+    <text x="600" y="152" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" text-anchor="middle">安全管理</text>
+    <text x="600" y="170" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">労働災害を</text>
+    <text x="600" y="183" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">防止する</text>
+  </g>
+  
+  <!-- 工法選定の考慮事項 -->
+  <g id="method_selection">
+    <text x="350" y="225" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#9b59b6">工法選定で考慮すべき事項</text>
+    
+    <rect x="50" y="245" width="600" height="175" fill="#f4ecf7" stroke="#9b59b6" stroke-width="2" rx="5"/>
+    
+    <!-- 現場条件 -->
+    <g id="site_conditions">
+      <circle cx="150" cy="290" r="40" fill="#3498db" opacity="0.2"/>
+      <text x="150" y="285" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="bold" text-anchor="middle">現場条件</text>
+      <text x="150" y="305" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">地形・地質</text>
+      <text x="150" y="320" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">気象</text>
+    </g>
+    
+    <!-- 周辺環境 -->
+    <g id="surrounding_env">
+      <circle cx="320" cy="290" r="40" fill="#27ae60" opacity="0.2"/>
+      <text x="320" y="285" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="bold" text-anchor="middle">周辺環境</text>
+      <text x="320" y="305" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">騒音・振動</text>
+      <text x="320" y="320" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">交通規制</text>
+    </g>
+    
+    <!-- 技術的条件 -->
+    <g id="technical_conditions">
+      <circle cx="490" cy="290" r="40" fill="#f39c12" opacity="0.2"/>
+      <text x="490" y="285" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="bold" text-anchor="middle">技術条件</text>
+      <text x="490" y="305" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">工期・品質</text>
+      <text x="490" y="320" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">コスト</text>
+    </g>
+    
+    <!-- 重要ポイント -->
+    <rect x="70" y="350" width="560" height="55" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" rx="3"/>
+    <text x="350" y="373" font-family="Arial, sans-serif" font-size="14" fill="#e74c3c" font-weight="bold" text-anchor="middle">✗ 工法選定で現場条件や周辺環境を</text>
+    <text x="350" y="393" font-family="Arial, sans-serif" font-size="14" fill="#e74c3c" font-weight="bold" text-anchor="middle">考慮しないのは誤り！</text>
+  </g>
+</svg>

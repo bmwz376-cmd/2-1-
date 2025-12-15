@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 16px; fill: #34495e; }
+      .value { font-family: Arial, sans-serif; font-size: 14px; fill: #e74c3c; font-weight: bold; }
+      .concrete { fill: #95a5a6; stroke: #2c3e50; stroke-width: 2; }
+      .rebar { fill: none; stroke: #e67e22; stroke-width: 4; }
+      .dimension { fill: none; stroke: #3498db; stroke-width: 1; stroke-dasharray: 5,5; }
+      .arrow-line { fill: none; stroke: #e74c3c; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title" text-anchor="middle">鉄筋のかぶり厚さの基準</text>
+  
+  <!-- Cross Section Diagram -->
+  <g transform="translate(100, 80)">
+    <!-- Concrete block -->
+    <rect class="concrete" x="0" y="0" width="280" height="200" rx="5"/>
+    
+    <!-- Rebar (horizontal) -->
+    <circle cx="60" cy="100" r="12" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    <circle cx="140" cy="100" r="12" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    <circle cx="220" cy="100" r="12" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    
+    <!-- Cover dimension lines -->
+    <path class="dimension" d="M 60 88 L 60 10 M 0 10 L 60 10"/>
+    <path class="arrow-line" d="M 5 10 L 0 10 M 0 10 L 0 15"/>
+    <path class="arrow-line" d="M 55 10 L 60 10 M 60 10 L 60 15"/>
+    <text x="30" y="5" class="value" text-anchor="middle">かぶり</text>
+    
+    <!-- Bottom cover -->
+    <path class="dimension" d="M 60 112 L 60 195 M 0 195 L 60 195"/>
+    <text x="30" y="215" class="value" text-anchor="middle">かぶり</text>
+    
+    <!-- Labels -->
+    <text x="140" y="50" class="label" text-anchor="middle">コンクリート</text>
+    <text x="140" y="145" class="label" text-anchor="middle">鉄筋</text>
+  </g>
+  
+  <!-- Standards Table -->
+  <g transform="translate(420, 80)">
+    <text x="0" y="0" class="label" font-weight="bold">【かぶり厚さの基準】</text>
+    
+    <!-- Table header -->
+    <rect x="0" y="15" width="320" height="35" fill="#3498db" stroke="#2c3e50" stroke-width="1"/>
+    <text x="160" y="38" class="label" text-anchor="middle" fill="white" font-weight="bold">部位・環境</text>
+    
+    <!-- Row 1: General -->
+    <rect x="0" y="50" width="220" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="220" y="50" width="100" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <text x="10" y="70" class="label">一般の部分</text>
+    <text x="270" y="70" class="value" text-anchor="middle">3cm以上</text>
+    
+    <!-- Row 2: Directly against earth -->
+    <rect x="0" y="80" width="220" height="30" fill="#fff3cd" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="220" y="80" width="100" height="30" fill="#fff3cd" stroke="#2c3e50" stroke-width="1"/>
+    <text x="10" y="100" class="label">土に接する部分</text>
+    <text x="270" y="100" class="value" text-anchor="middle">6cm以上</text>
+    
+    <!-- Row 3: Underwater -->
+    <rect x="0" y="110" width="220" height="30" fill="#d1ecf1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="220" y="110" width="100" height="30" fill="#d1ecf1" stroke="#2c3e50" stroke-width="1"/>
+    <text x="10" y="130" class="label">水中コンクリート</text>
+    <text x="270" y="130" class="value" text-anchor="middle">8cm以上</text>
+    
+    <!-- Row 4: Seawater -->
+    <rect x="0" y="140" width="220" height="30" fill="#d1ecf1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="220" y="140" width="100" height="30" fill="#d1ecf1" stroke="#2c3e50" stroke-width="1"/>
+    <text x="10" y="160" class="label">海水に接する部分</text>
+    <text x="270" y="160" class="value" text-anchor="middle">10cm以上</text>
+  </g>
+  
+  <!-- Important Note -->
+  <g transform="translate(100, 330)">
+    <rect x="0" y="0" width="600" height="120" fill="#fff3cd" stroke="#f39c12" stroke-width="3" rx="5"/>
+    <text x="20" y="30" class="label" font-weight="bold" fill="#856404">重要ポイント：</text>
+    <text x="20" y="55" class="label" fill="#856404">① 土に接する部分ほど「大きく」設定する（腐食リスク大）</text>
+    <text x="20" y="78" class="label" fill="#856404">② スペーサーを使用してかぶりを確保する</text>
+    <text x="20" y="101" class="label" fill="#856404">③ かぶりは鉄筋の腐食防止と耐火性確保のために重要</text>
+  </g>
+</svg>

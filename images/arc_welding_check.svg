@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Title -->
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    アーク溶接における鋼材の検査項目
+  </text>
+  
+  <!-- Main Inspection Areas -->
+  <g id="inspection-diagram">
+    <!-- Steel Plate with Weld -->
+    <defs>
+      <pattern id="steelTexture" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+        <rect width="10" height="10" fill="#95a5a6"/>
+        <line x1="0" y1="0" x2="10" y2="10" stroke="#7f8c8d" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+    
+    <!-- Left Steel Plate -->
+    <rect x="50" y="100" width="300" height="80" fill="url(#steelTexture)" stroke="#34495e" stroke-width="2"/>
+    <text x="200" y="145" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">鋼材A</text>
+    
+    <!-- Right Steel Plate -->
+    <rect x="450" y="100" width="300" height="80" fill="url(#steelTexture)" stroke="#34495e" stroke-width="2"/>
+    <text x="600" y="145" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">鋼材B</text>
+    
+    <!-- Weld Joint -->
+    <path d="M 350 100 L 450 100 L 430 140 L 370 140 Z" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    <text x="400" y="125" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">溶接部</text>
+  </g>
+  
+  <!-- Inspection Items -->
+  <g id="inspection-items">
+    <rect x="50" y="220" width="700" height="360" fill="#ecf0f1" stroke="#3498db" stroke-width="2" rx="5"/>
+    
+    <text x="400" y="250" font-size="18" font-weight="bold" text-anchor="middle" fill="#3498db">
+      検査項目 (JIS規格に基づく)
+    </text>
+    
+    <!-- Item 1: Chemical Composition -->
+    <g id="item1">
+      <rect x="80" y="270" width="640" height="60" fill="#fff" stroke="#27ae60" stroke-width="2" rx="3"/>
+      <circle cx="110" cy="300" r="15" fill="#27ae60"/>
+      <text x="110" y="306" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">✓</text>
+      <text x="140" y="295" font-size="15" font-weight="bold" fill="#2c3e50">1. 化学成分 (Chemical Composition)</text>
+      <text x="140" y="315" font-size="12" fill="#555">
+        炭素(C), マンガン(Mn), リン(P), 硫黄(S)等の含有量を検査
+      </text>
+    </g>
+    
+    <!-- Item 2: Mechanical Properties -->
+    <g id="item2">
+      <rect x="80" y="345" width="640" height="60" fill="#fff" stroke="#27ae60" stroke-width="2" rx="3"/>
+      <circle cx="110" cy="375" r="15" fill="#27ae60"/>
+      <text x="110" y="381" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">✓</text>
+      <text x="140" y="370" font-size="15" font-weight="bold" fill="#2c3e50">2. 機械的性質 (Mechanical Properties)</text>
+      <text x="140" y="390" font-size="12" fill="#555">
+        引張強さ、降伏点、伸び、曲げ性能等を検査
+      </text>
+    </g>
+    
+    <!-- Item 3: Surface Quality -->
+    <g id="item3">
+      <rect x="80" y="420" width="640" height="60" fill="#fff" stroke="#27ae60" stroke-width="2" rx="3"/>
+      <circle cx="110" cy="450" r="15" fill="#27ae60"/>
+      <text x="110" y="456" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">✓</text>
+      <text x="140" y="445" font-size="15" font-weight="bold" fill="#2c3e50">3. 表面状態 (Surface Quality)</text>
+      <text x="140" y="465" font-size="12" fill="#555">
+        きず、割れ、錆、その他の表面欠陥の有無を検査
+      </text>
+    </g>
+    
+    <!-- Item 4: NOT Required -->
+    <g id="item4">
+      <rect x="80" y="495" width="640" height="60" fill="#ffe6e6" stroke="#e74c3c" stroke-width="2" rx="3"/>
+      <circle cx="110" cy="525" r="15" fill="#e74c3c"/>
+      <text x="110" y="531" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">✗</text>
+      <text x="140" y="520" font-size="15" font-weight="bold" fill="#c0392b">4. 溶接後の曲げ戻し ← 不適切！</text>
+      <text x="140" y="540" font-size="12" fill="#c0392b">
+        溶接後の曲げ戻しは材料の品質を低下させるため、検査項目ではない
+      </text>
+    </g>
+  </g>
+</svg>

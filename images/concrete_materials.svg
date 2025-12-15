@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450">
+  <!-- 背景 -->
+  <rect width="750" height="450" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="375" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">コンクリートの材料特性</text>
+  
+  <!-- 水セメント比と強度 -->
+  <g id="wc_ratio">
+    <text x="200" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#3498db">水セメント比と強度の関係</text>
+    
+    <!-- グラフ -->
+    <line x1="50" y1="240" x2="50" y2="90" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowup)"/>
+    <line x1="50" y1="240" x2="350" y2="240" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowright)"/>
+    
+    <!-- ラベル -->
+    <text x="30" y="90" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" text-anchor="middle">強度</text>
+    <text x="360" y="245" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">W/C</text>
+    
+    <!-- 曲線（強度が減少） -->
+    <path d="M 50 110 Q 150 130, 250 180 Q 300 210, 340 235" stroke="#e74c3c" stroke-width="4" fill="none"/>
+    
+    <!-- ポイント -->
+    <circle cx="50" cy="110" r="5" fill="#27ae60"/>
+    <text x="65" y="115" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">小 → 高強度</text>
+    
+    <circle cx="340" cy="235" r="5" fill="#e74c3c"/>
+    <text x="300" y="228" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c" text-anchor="end">大 → 低強度</text>
+    
+    <!-- 説明 -->
+    <rect x="50" y="260" width="300" height="50" fill="#d5f4e6" stroke="#27ae60" stroke-width="2" rx="3"/>
+    <text x="200" y="280" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold" text-anchor="middle">水セメント比が小さいほど</text>
+    <text x="200" y="300" font-family="Arial, sans-serif" font-size="12" fill="#27ae60" font-weight="bold" text-anchor="middle">コンクリート強度は大きくなる</text>
+  </g>
+  
+  <!-- AE剤の効果 -->
+  <g id="ae_agent">
+    <text x="550" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#9b59b6">AE剤の効果</text>
+    
+    <!-- コンクリート断面（AE剤なし） -->
+    <rect x="420" y="90" width="90" height="60" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    <text x="465" y="80" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">AE剤なし</text>
+    <circle cx="440" cy="110" r="3" fill="#bdc3c7"/>
+    <circle cx="455" cy="120" r="4" fill="#bdc3c7"/>
+    <circle cx="490" cy="115" r="5" fill="#bdc3c7"/>
+    
+    <!-- コンクリート断面（AE剤あり） -->
+    <rect x="590" y="90" width="90" height="60" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    <text x="635" y="80" font-family="Arial, sans-serif" font-size="11" fill="#27ae60" font-weight="bold" text-anchor="middle">AE剤あり</text>
+    <circle cx="600" cy="100" r="2" fill="#4da6ff"/>
+    <circle cx="610" cy="110" r="2" fill="#4da6ff"/>
+    <circle cx="620" cy="105" r="2" fill="#4da6ff"/>
+    <circle cx="630" cy="120" r="2" fill="#4da6ff"/>
+    <circle cx="640" cy="100" r="2" fill="#4da6ff"/>
+    <circle cx="650" cy="115" r="2" fill="#4da6ff"/>
+    <circle cx="660" cy="110" r="2" fill="#4da6ff"/>
+    <circle cx="670" cy="125" r="2" fill="#4da6ff"/>
+    <circle cx="605" cy="130" r="2" fill="#4da6ff"/>
+    <circle cx="625" cy="135" r="2" fill="#4da6ff"/>
+    <circle cx="645" cy="130" r="2" fill="#4da6ff"/>
+    <circle cx="665" cy="140" r="2" fill="#4da6ff"/>
+    
+    <!-- 効果 -->
+    <rect x="420" y="165" width="260" height="65" fill="#f4ecf7" stroke="#9b59b6" stroke-width="2" rx="3"/>
+    <text x="550" y="185" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" text-anchor="middle">微細な空気泡を発生させる</text>
+    <text x="550" y="203" font-family="Arial, sans-serif" font-size="11" fill="#27ae60" text-anchor="middle">✓ ワーカビリティ改善</text>
+    <text x="550" y="220" font-family="Arial, sans-serif" font-size="11" fill="#27ae60" text-anchor="middle">✓ 耐久性向上</text>
+  </g>
+  
+  <!-- 高炉セメントの特性 -->
+  <g id="blast_furnace_cement">
+    <text x="375" y="260" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#e67e22">高炉セメントの特性</text>
+    
+    <rect x="50" y="280" width="650" height="150" fill="#fff3cd" stroke="#f39c12" stroke-width="2" rx="5"/>
+    
+    <!-- 強度発現グラフ -->
+    <g id="strength_development">
+      <text x="200" y="305" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="bold" text-anchor="middle">強度発現の比較</text>
+      
+      <!-- 軸 -->
+      <line x1="80" y1="405" x2="80" y2="320" stroke="#7f8c8d" stroke-width="1.5"/>
+      <line x1="80" y1="405" x2="320" y2="405" stroke="#7f8c8d" stroke-width="1.5"/>
+      <text x="60" y="325" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">強度</text>
+      <text x="330" y="410" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">時間</text>
+      
+      <!-- 普通ポルトランドセメント -->
+      <path d="M 80 405 Q 140 365, 200 335 Q 260 315, 310 310" stroke="#3498db" stroke-width="3" fill="none"/>
+      <text x="315" y="315" font-family="Arial, sans-serif" font-size="10" fill="#3498db">普通</text>
+      
+      <!-- 高炉セメント -->
+      <path d="M 80 405 Q 140 385, 200 360 Q 260 330, 310 305" stroke="#e67e22" stroke-width="3" fill="none"/>
+      <text x="315" y="305" font-family="Arial, sans-serif" font-size="10" fill="#e67e22">高炉</text>
+      
+      <!-- 初期・長期マーク -->
+      <line x1="140" y1="405" x2="140" y2="410" stroke="#7f8c8d" stroke-width="1"/>
+      <text x="140" y="420" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d" text-anchor="middle">初期</text>
+      
+      <line x1="260" y1="405" x2="260" y2="410" stroke="#7f8c8d" stroke-width="1"/>
+      <text x="260" y="420" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d" text-anchor="middle">長期</text>
+    </g>
+    
+    <!-- 特徴リスト -->
+    <g id="features">
+      <text x="450" y="305" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="bold">主な特徴</text>
+      
+      <text x="380" y="330" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">✗ 初期強度の発現が遅い</text>
+      <text x="380" y="350" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ 長期強度が大きい</text>
+      <text x="380" y="370" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ 水和熱が小さい</text>
+      <text x="380" y="390" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ 化学抵抗性に優れる</text>
+      <text x="380" y="410" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ マスコンクリートに適する</text>
+    </g>
+  </g>
+  
+  <!-- 矢印マーカー -->
+  <defs>
+    <marker id="arrowup" markerWidth="10" markerHeight="10" refX="5" refY="1" orient="auto">
+      <polygon points="0 10, 10 10, 5 0" fill="#2c3e50" />
+    </marker>
+    <marker id="arrowright" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#2c3e50" />
+    </marker>
+  </defs>
+</svg>

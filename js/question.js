@@ -28,7 +28,9 @@ function getQuestionIdFromUrl() {
 // 全問題データを読み込む
 async function loadQuestions() {
     try {
-        const response = await fetch('data/questions.json');
+        // キャッシュバスティング: タイムスタンプを追加
+        const timestamp = new Date().getTime();
+        const response = await fetch(`data/questions.json?v=${timestamp}`);
         allQuestions = await response.json();
     } catch (error) {
         console.error('問題データの読み込みエラー:', error);

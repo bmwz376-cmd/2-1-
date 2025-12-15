@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="650" height="450">
+  <!-- Background -->
+  <rect width="650" height="450" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="325" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    酸素欠乏危険場所と作業主任者
+  </text>
+  
+  <!-- Warning box -->
+  <g transform="translate(50, 50)">
+    <rect width="550" height="60" fill="#fef2f2" stroke="#ef4444" stroke-width="3" rx="10"/>
+    <text x="275" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+      ⚠️ 酸素欠乏危険作業主任者の選任が必要
+    </text>
+    <text x="275" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">
+      労働安全衛生法 第14条により義務付けられています
+    </text>
+  </g>
+  
+  <!-- Examples of dangerous places -->
+  <text x="325" y="145" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    酸素欠乏危険場所の例
+  </text>
+  
+  <!-- Grid of examples -->
+  <g transform="translate(50, 170)">
+    <!-- Manhole -->
+    <g>
+      <rect width="170" height="110" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" rx="8"/>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e40af">
+        🕳️ マンホール
+      </text>
+      <text x="85" y="50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        下水道・排水管内
+      </text>
+      <text x="85" y="68" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        汚水ピット
+      </text>
+      <text x="85" y="86" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        雨水貯留槽
+      </text>
+    </g>
+    
+    <!-- Tunnel -->
+    <g transform="translate(190, 0)">
+      <rect width="170" height="110" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#b45309">
+        🚇 トンネル
+      </text>
+      <text x="85" y="50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        掘削中のトンネル
+      </text>
+      <text x="85" y="68" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        地下工事
+      </text>
+      <text x="85" y="86" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        立坑内部
+      </text>
+    </g>
+    
+    <!-- Underground pit -->
+    <g transform="translate(380, 0)">
+      <rect width="170" height="110" fill="#f0fdf4" stroke="#10b981" stroke-width="2" rx="8"/>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#15803d">
+        🏢 地下ピット
+      </text>
+      <text x="85" y="50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        地下貯蔵タンク
+      </text>
+      <text x="85" y="68" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        受水槽
+      </text>
+      <text x="85" y="86" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        機械室ピット
+      </text>
+    </g>
+  </g>
+  
+  <!-- Other examples -->
+  <g transform="translate(50, 295)">
+    <g>
+      <rect width="170" height="90" fill="#fef2f2" stroke="#ef4444" stroke-width="2" rx="8"/>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#dc2626">
+        🗑️ 汚泥槽
+      </text>
+      <text x="85" y="50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        浄化槽
+      </text>
+      <text x="85" y="68" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        汚水処理施設
+      </text>
+    </g>
+    
+    <g transform="translate(190, 0)">
+      <rect width="170" height="90" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2" rx="8"/>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#7c3aed">
+        🌾 サイロ
+      </text>
+      <text x="85" y="50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        穀物貯蔵庫
+      </text>
+      <text x="85" y="68" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        飼料貯蔵タンク
+      </text>
+    </g>
+    
+    <g transform="translate(380, 0)">
+      <rect width="170" height="90" fill="#fce7f3" stroke="#ec4899" stroke-width="2" rx="8"/>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#db2777">
+        🔥 密閉空間
+      </text>
+      <text x="85" y="50" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        ボイラー内部
+      </text>
+      <text x="85" y="68" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#64748b">
+        反応槽内部
+      </text>
+    </g>
+  </g>
+  
+  <!-- Safety measures -->
+  <g transform="translate(50, 405)">
+    <rect width="550" height="35" fill="#fffbeb" stroke="#f59e0b" stroke-width="2" rx="6"/>
+    <text x="275" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">
+      必ず酸素濃度測定・換気・保護具着用を実施し、作業主任者を配置すること
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .value { font-family: Arial, sans-serif; font-size: 14px; fill: #e74c3c; font-weight: bold; }
+      .box { stroke: #2c3e50; stroke-width: 2; }
+      .direct { fill: #3498db; }
+      .indirect { fill: #e67e22; }
+      .line { fill: none; stroke: #2c3e50; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title" text-anchor="middle">原価管理の考え方</text>
+  
+  <!-- Cost Structure -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="700" height="50" fill="#2c3e50" stroke="#2c3e50" stroke-width="2" rx="5"/>
+    <text x="350" y="32" class="subtitle" text-anchor="middle" fill="white">工事原価</text>
+  </g>
+  
+  <!-- Direct Costs -->
+  <g transform="translate(50, 130)">
+    <rect class="box direct" x="0" y="0" width="330" height="50" rx="5"/>
+    <text x="165" y="32" class="subtitle" text-anchor="middle" fill="white">直接費</text>
+    
+    <!-- Direct cost items -->
+    <rect class="box direct" x="0" y="70" width="160" height="40" rx="3"/>
+    <text x="80" y="95" class="label" text-anchor="middle" fill="white">材料費</text>
+    
+    <rect class="box direct" x="170" y="70" width="160" height="40" rx="3"/>
+    <text x="250" y="95" class="label" text-anchor="middle" fill="white">労務費</text>
+    
+    <rect class="box direct" x="0" y="120" width="160" height="40" rx="3"/>
+    <text x="80" y="145" class="label" text-anchor="middle" fill="white">機械経費</text>
+    
+    <rect class="box direct" x="170" y="120" width="160" height="40" rx="3"/>
+    <text x="250" y="145" class="label" text-anchor="middle" fill="white">外注費</text>
+  </g>
+  
+  <!-- Indirect Costs -->
+  <g transform="translate(420, 130)">
+    <rect class="box indirect" x="0" y="0" width="330" height="50" rx="5"/>
+    <text x="165" y="32" class="subtitle" text-anchor="middle" fill="white">間接費</text>
+    
+    <!-- Indirect cost items -->
+    <rect class="box indirect" x="0" y="70" width="160" height="40" rx="3"/>
+    <text x="80" y="95" class="label" text-anchor="middle" fill="white">現場事務所費</text>
+    
+    <rect class="box indirect" x="170" y="70" width="160" height="40" rx="3"/>
+    <text x="250" y="95" class="label" text-anchor="middle" fill="white">共通仮設費</text>
+    
+    <rect class="box indirect" x="0" y="120" width="160" height="40" rx="3"/>
+    <text x="80" y="145" class="label" text-anchor="middle" fill="white">現場管理費</text>
+    
+    <rect class="box indirect" x="170" y="120" width="160" height="40" rx="3"/>
+    <text x="250" y="145" class="label" text-anchor="middle" fill="white">一般管理費</text>
+  </g>
+  
+  <!-- Cost Management Process -->
+  <g transform="translate(50, 330)">
+    <text x="0" y="0" class="subtitle">原価管理のプロセス</text>
+    
+    <!-- Step 1 -->
+    <rect x="0" y="20" width="140" height="70" fill="#27ae60" class="box" rx="5"/>
+    <text x="70" y="45" class="label" text-anchor="middle" fill="white">実行予算</text>
+    <text x="70" y="65" class="label" text-anchor="middle" fill="white" font-size="12">作成</text>
+    
+    <!-- Arrow -->
+    <path d="M 145 55 L 175 55" class="line" stroke="#95a5a6" marker-end="url(#arrow)"/>
+    
+    <!-- Step 2 -->
+    <rect x="180" y="20" width="140" height="70" fill="#3498db" class="box" rx="5"/>
+    <text x="250" y="45" class="label" text-anchor="middle" fill="white">出来高</text>
+    <text x="250" y="65" class="label" text-anchor="middle" fill="white" font-size="12">測定</text>
+    
+    <!-- Arrow -->
+    <path d="M 325 55 L 355 55" class="line" stroke="#95a5a6" marker-end="url(#arrow)"/>
+    
+    <!-- Step 3 -->
+    <rect x="360" y="20" width="140" height="70" fill="#9b59b6" class="box" rx="5"/>
+    <text x="430" y="45" class="label" text-anchor="middle" fill="white">実際原価</text>
+    <text x="430" y="65" class="label" text-anchor="middle" fill="white" font-size="12">集計</text>
+    
+    <!-- Arrow -->
+    <path d="M 505 55 L 535 55" class="line" stroke="#95a5a6" marker-end="url(#arrow)"/>
+    
+    <!-- Step 4 -->
+    <rect x="540" y="20" width="140" height="70" fill="#e74c3c" class="box" rx="5"/>
+    <text x="610" y="45" class="label" text-anchor="middle" fill="white">差異分析</text>
+    <text x="610" y="65" class="label" text-anchor="middle" fill="white" font-size="12">・改善</text>
+  </g>
+  
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <polygon points="0 0, 10 3, 0 6" fill="#95a5a6"/>
+  </marker>
+  
+  <!-- Important Notes -->
+  <g transform="translate(50, 440)">
+    <rect x="0" y="0" width="700" height="90" fill="#fff3cd" stroke="#f39c12" stroke-width="3" rx="5"/>
+    <text x="20" y="30" class="label" font-weight="bold" fill="#856404">【重要ポイント】</text>
+    <text x="20" y="52" class="label" fill="#856404">• 原価管理では「出来高」と「支出額」の両方を管理する</text>
+    <text x="20" y="72" class="label" fill="#856404">• 実行予算を基準として、実際原価との差異を分析・改善する</text>
+  </g>
+</svg>
