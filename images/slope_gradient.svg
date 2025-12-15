@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <!-- 背景 -->
+  <rect width="700" height="450" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">法面勾配の比較</text>
+  
+  <!-- 1:1.0 の勾配（緩い） -->
+  <g id="slope10">
+    <text x="150" y="60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#27ae60">1:1.0（緩い勾配）</text>
+    
+    <!-- 地盤 -->
+    <path d="M 50 250 L 250 250 L 250 80 L 150 80 L 50 180 Z" fill="#d4a574" stroke="#8b6f47" stroke-width="2"/>
+    
+    <!-- 垂直線 -->
+    <line x1="150" y1="80" x2="150" y2="180" stroke="#e74c3c" stroke-width="3"/>
+    <text x="125" y="135" font-family="Arial, sans-serif" font-size="14" fill="#e74c3c">垂直1</text>
+    
+    <!-- 水平線 -->
+    <line x1="150" y1="180" x2="50" y2="180" stroke="#3498db" stroke-width="3"/>
+    <text x="85" y="170" font-family="Arial, sans-serif" font-size="14" fill="#3498db">水平1.0</text>
+    
+    <!-- 小段 -->
+    <rect x="50" y="180" width="100" height="5" fill="#95a5a6"/>
+    <text x="75" y="200" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">小段</text>
+    
+    <!-- 排水溝 -->
+    <path d="M 45 180 L 40 185 L 50 185 Z" fill="#2980b9"/>
+    
+    <!-- 角度 -->
+    <path d="M 150 180 Q 140 175 130 175" fill="none" stroke="#f39c12" stroke-width="2"/>
+    <text x="115" y="190" font-family="Arial, sans-serif" font-size="12" fill="#f39c12">45°</text>
+  </g>
+  
+  <!-- 1:0.5 の勾配（急） -->
+  <g id="slope05">
+    <text x="500" y="60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#e74c3c">1:0.5（急な勾配）</text>
+    
+    <!-- 地盤 -->
+    <path d="M 450 250 L 600 250 L 600 80 L 550 80 L 450 180 Z" fill="#c39f76" stroke="#8b6f47" stroke-width="2"/>
+    
+    <!-- 垂直線 -->
+    <line x1="550" y1="80" x2="550" y2="180" stroke="#e74c3c" stroke-width="3"/>
+    <text x="525" y="135" font-family="Arial, sans-serif" font-size="14" fill="#e74c3c">垂直1</text>
+    
+    <!-- 水平線 -->
+    <line x1="550" y1="180" x2="500" y2="180" stroke="#3498db" stroke-width="3"/>
+    <text x="515" y="170" font-family="Arial, sans-serif" font-size="14" fill="#3498db">水平0.5</text>
+    
+    <!-- 角度 -->
+    <path d="M 550 180 Q 545 175 537 173" fill="none" stroke="#f39c12" stroke-width="2"/>
+    <text x="525" y="193" font-family="Arial, sans-serif" font-size="12" fill="#f39c12">約63°</text>
+  </g>
+  
+  <!-- 説明 -->
+  <g id="explanation">
+    <rect x="50" y="290" width="600" height="140" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="5"/>
+    
+    <text x="70" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">【法面勾配の表記】</text>
+    
+    <text x="70" y="340" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">• 1:1.0 = 垂直1に対して水平1.0 → 緩い勾配（安定）</text>
+    <text x="70" y="365" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">• 1:0.5 = 垂直1に対して水平0.5 → 急な勾配</text>
+    
+    <text x="70" y="395" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e74c3c">重要: 数字が大きいほど緩い勾配になる！</text>
+    <text x="70" y="415" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">（1:1.5 > 1:1.0 > 1:0.8 > 1:0.5の順に緩くなる）</text>
+  </g>
+</svg>

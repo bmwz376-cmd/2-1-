@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 18px; fill: #34495e; }
+      .value { font-family: Arial, sans-serif; font-size: 16px; fill: #e74c3c; font-weight: bold; }
+      .arrow { fill: none; stroke: #3498db; stroke-width: 3; marker-end: url(#arrowhead); }
+      .box { fill: #ecf0f1; stroke: #2c3e50; stroke-width: 2; }
+      .ground { fill: #8b4513; }
+      .loose { fill: #daa520; }
+      .compact { fill: #654321; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3498db" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title" text-anchor="middle">土量の変化（L・N・C）</text>
+  
+  <!-- Natural State (N) -->
+  <g transform="translate(50, 80)">
+    <rect class="ground" x="0" y="0" width="150" height="120" rx="5"/>
+    <text x="75" y="65" class="label" text-anchor="middle" fill="white">自然状態</text>
+    <text x="75" y="90" class="label" text-anchor="middle" fill="white">地山(N)</text>
+    <text x="75" y="145" class="value" text-anchor="middle">1.0 m³</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path class="arrow" d="M 220 140 L 280 140" />
+  <text x="250" y="130" class="label" text-anchor="middle" fill="#e74c3c">掘削</text>
+  
+  <!-- Loose State (L) -->
+  <g transform="translate(300, 60)">
+    <rect class="loose" x="0" y="0" width="170" height="160" rx="5"/>
+    <text x="85" y="85" class="label" text-anchor="middle" fill="white">ほぐし状態</text>
+    <text x="85" y="110" class="label" text-anchor="middle" fill="white">(L)</text>
+    <text x="85" y="185" class="value" text-anchor="middle">1.2～1.3 m³</text>
+    <circle cx="30" cy="30" r="8" fill="#f39c12"/>
+    <circle cx="60" cy="40" r="8" fill="#f39c12"/>
+    <circle cx="90" cy="25" r="8" fill="#f39c12"/>
+    <circle cx="120" cy="35" r="8" fill="#f39c12"/>
+    <circle cx="140" cy="45" r="8" fill="#f39c12"/>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path class="arrow" d="M 490 140 L 550 140" />
+  <text x="520" y="130" class="label" text-anchor="middle" fill="#27ae60">締固め</text>
+  
+  <!-- Compacted State (C) -->
+  <g transform="translate(570, 90)">
+    <rect class="compact" x="0" y="0" width="140" height="100" rx="5"/>
+    <text x="70" y="55" class="label" text-anchor="middle" fill="white">締固め</text>
+    <text x="70" y="80" class="label" text-anchor="middle" fill="white">状態(C)</text>
+    <text x="70" y="135" class="value" text-anchor="middle">0.85～0.95 m³</text>
+  </g>
+  
+  <!-- Relationship -->
+  <g transform="translate(50, 280)">
+    <text x="0" y="0" class="label">土量の関係：</text>
+    <text x="150" y="0" class="value" font-size="20">L  &gt;  N  &gt;  C</text>
+    <text x="0" y="35" class="label" font-size="14">例：N=1.0m³の場合</text>
+    <text x="0" y="60" class="label" font-size="14">  L = 1.2～1.3 m³ (ほぐし率 1.2～1.3)</text>
+    <text x="0" y="85" class="label" font-size="14">  C = 0.85～0.95 m³ (締固め率 0.85～0.95)</text>
+  </g>
+</svg>

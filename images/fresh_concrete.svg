@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450">
+  <!-- 背景 -->
+  <rect width="750" height="450" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="375" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">フレッシュコンクリートの性質</text>
+  
+  <!-- スランプ試験 -->
+  <g id="slump_test">
+    <text x="180" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#3498db">スランプ試験</text>
+    
+    <!-- スランプコーン -->
+    <path d="M 100 120 L 130 180 L 170 180 L 200 120 Z" fill="none" stroke="#7f8c8d" stroke-width="3" stroke-dasharray="5,5"/>
+    <text x="150" y="110" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="middle">スランプコーン</text>
+    
+    <!-- コンクリート（小さいスランプ） -->
+    <path d="M 130 180 L 135 195 L 165 195 L 170 180 Z" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    <line x1="100" y1="200" x2="200" y2="200" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="150" y1="195" x2="150" y2="205" stroke="#27ae60" stroke-width="3"/>
+    <line x1="135" y1="200" x2="165" y2="200" stroke="#27ae60" stroke-width="2" marker-start="url(#arrowleft)" marker-end="url(#arrowright)"/>
+    <text x="150" y="220" font-family="Arial, sans-serif" font-size="11" fill="#27ae60" text-anchor="middle">小さいスランプ</text>
+    <text x="150" y="235" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">硬い（軟度小）</text>
+    
+    <!-- コンクリート（大きいスランプ） -->
+    <path d="M 250 180 L 260 210 L 310 210 L 320 180 Z" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    <line x1="220" y1="215" x2="350" y2="215" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="285" y1="210" x2="285" y2="220" stroke="#e74c3c" stroke-width="3"/>
+    <line x1="260" y1="215" x2="310" y2="215" stroke="#e74c3c" stroke-width="2" marker-start="url(#arrowleft2)" marker-end="url(#arrowright2)"/>
+    <text x="285" y="235" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c" text-anchor="middle">大きいスランプ</text>
+    <text x="285" y="250" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">軟らかい（軟度大）</text>
+  </g>
+  
+  <!-- 空気量の影響 -->
+  <g id="air_content">
+    <text x="550" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#9b59b6">空気量の影響</text>
+    
+    <!-- グラフ -->
+    <line x1="450" y1="200" x2="450" y2="100" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="450" y1="200" x2="650" y2="200" stroke="#2c3e50" stroke-width="2"/>
+    <text x="430" y="105" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="end">強度</text>
+    <text x="655" y="205" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">空気量</text>
+    
+    <!-- 曲線（空気量増加で強度低下） -->
+    <path d="M 450 110 Q 500 120, 550 145 Q 600 175, 640 195" stroke="#e74c3c" stroke-width="4" fill="none"/>
+    
+    <!-- 適正範囲 -->
+    <rect x="495" y="100" width="60" height="100" fill="#d5f4e6" opacity="0.3"/>
+    <text x="525" y="215" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" text-anchor="middle">4～6%</text>
+    <text x="525" y="228" font-family="Arial, sans-serif" font-size="9" fill="#27ae60" text-anchor="middle">適正範囲</text>
+    
+    <text x="550" y="250" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c" font-weight="bold" text-anchor="middle">空気量が多すぎると強度低下</text>
+  </g>
+  
+  <!-- 材料分離 -->
+  <g id="segregation">
+    <text x="375" y="290" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#e67e22">材料分離（セグリゲーション）</text>
+    
+    <rect x="50" y="310" width="650" height="120" fill="#fff3cd" stroke="#f39c12" stroke-width="2" rx="5"/>
+    
+    <!-- 正常なコンクリート -->
+    <rect x="100" y="335" width="80" height="70" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    <circle cx="120" cy="350" r="4" fill="#5d6d7e"/>
+    <circle cx="135" cy="360" r="5" fill="#5d6d7e"/>
+    <circle cx="150" cy="355" r="4" fill="#5d6d7e"/>
+    <circle cx="165" cy="370" r="5" fill="#5d6d7e"/>
+    <circle cx="125" cy="380" r="4" fill="#5d6d7e"/>
+    <circle cx="155" cy="385" r="4" fill="#5d6d7e"/>
+    <text x="140" y="425" font-family="Arial, sans-serif" font-size="11" fill="#27ae60" font-weight="bold" text-anchor="middle">均一</text>
+    
+    <!-- 材料分離したコンクリート -->
+    <rect x="250" y="335" width="80" height="70" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="2"/>
+    <!-- 骨材が下に -->
+    <circle cx="270" cy="390" r="6" fill="#5d6d7e"/>
+    <circle cx="290" cy="392" r="7" fill="#5d6d7e"/>
+    <circle cx="310" cy="388" r="6" fill="#5d6d7e"/>
+    <!-- ペーストが上に -->
+    <rect x="250" y="335" width="80" height="35" fill="#95a5a6" opacity="0.7"/>
+    <text x="290" y="425" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c" font-weight="bold" text-anchor="middle">分離発生</text>
+    
+    <!-- 原因と対策 -->
+    <g id="causes_measures">
+      <text x="410" y="335" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">【材料分離の原因】</text>
+      <text x="410" y="355" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">• スランプが大きすぎる</text>
+      <text x="410" y="373" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">• 落下高さが大きい</text>
+      <text x="410" y="391" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">• 過度な締固め</text>
+      <text x="410" y="409" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">→ 品質低下の原因に</text>
+    </g>
+  </g>
+  
+  <!-- 矢印マーカー -->
+  <defs>
+    <marker id="arrowleft" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+      <polygon points="8 0, 8 8, 0 4" fill="#27ae60" />
+    </marker>
+    <marker id="arrowright" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#27ae60" />
+    </marker>
+    <marker id="arrowleft2" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+      <polygon points="8 0, 8 8, 0 4" fill="#e74c3c" />
+    </marker>
+    <marker id="arrowright2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#e74c3c" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450">
+  <!-- 背景 -->
+  <rect width="750" height="450" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="375" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">締固め機械の適用</text>
+  
+  <!-- ロードローラ -->
+  <g id="road_roller">
+    <text x="125" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#3498db">ロードローラ</text>
+    
+    <!-- 機械本体 -->
+    <rect x="50" y="80" width="80" height="40" fill="#34495e" rx="5"/>
+    <!-- ローラー（前） -->
+    <circle cx="70" cy="130" r="20" fill="#95a5a6" stroke="#7f8c8d" stroke-width="3"/>
+    <!-- ローラー（後） -->
+    <circle cx="110" cy="130" r="20" fill="#95a5a6" stroke="#7f8c8d" stroke-width="3"/>
+    
+    <!-- 地盤（砂質土） -->
+    <rect x="30" y="150" width="120" height="50" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <text x="90" y="180" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#d68910" text-anchor="middle">砂質土</text>
+    
+    <!-- 説明 -->
+    <rect x="30" y="210" width="120" height="60" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" rx="3"/>
+    <text x="90" y="228" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">【適用土質】</text>
+    <text x="90" y="245" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">砂質土</text>
+    <text x="90" y="260" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" text-anchor="middle">✓ 適している</text>
+  </g>
+  
+  <!-- タイヤローラ -->
+  <g id="tire_roller">
+    <text x="325" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#e67e22">タイヤローラ</text>
+    
+    <!-- 機械本体 -->
+    <rect x="250" y="80" width="100" height="35" fill="#34495e" rx="5"/>
+    <!-- タイヤ（前列） -->
+    <ellipse cx="265" cy="125" rx="12" ry="18" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+    <ellipse cx="285" cy="125" rx="12" ry="18" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+    <ellipse cx="305" cy="125" rx="12" ry="18" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+    <!-- タイヤ（後列） -->
+    <ellipse cx="275" cy="125" rx="12" ry="18" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+    <ellipse cx="295" cy="125" rx="12" ry="18" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+    <ellipse cx="315" cy="125" rx="12" ry="18" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+    <ellipse cx="335" cy="125" rx="12" ry="18" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+    
+    <!-- 地盤（粘性土） -->
+    <rect x="230" y="143" width="140" height="50" fill="#c49a6c" stroke="#8b6f47" stroke-width="2"/>
+    <text x="300" y="173" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#6b4423" text-anchor="middle">粘性土</text>
+    
+    <!-- 説明 -->
+    <rect x="240" y="203" width="120" height="67" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" rx="3"/>
+    <text x="300" y="221" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">【適用土質】</text>
+    <text x="300" y="238" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">粘性土</text>
+    <text x="300" y="253" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50" text-anchor="middle">（こね返しが少ない）</text>
+    <text x="300" y="267" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" text-anchor="middle">✓ 適している</text>
+  </g>
+  
+  <!-- タンピングローラ -->
+  <g id="tamping_roller">
+    <text x="560" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#9b59b6">タンピングローラ</text>
+    <text x="520" y="76" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">（シープスフットローラ）</text>
+    
+    <!-- 機械本体 -->
+    <rect x="470" y="90" width="90" height="30" fill="#34495e" rx="5"/>
+    <!-- ローラー（突起付き） -->
+    <ellipse cx="510" cy="130" rx="25" ry="20" fill="#8e44ad" stroke="#6c3483" stroke-width="2"/>
+    <ellipse cx="550" cy="130" rx="25" ry="20" fill="#8e44ad" stroke="#6c3483" stroke-width="2"/>
+    <!-- 突起（フット） -->
+    <rect x="500" y="145" width="8" height="15" fill="#5b2c6f" rx="1"/>
+    <rect x="512" y="145" width="8" height="15" fill="#5b2c6f" rx="1"/>
+    <rect x="524" y="145" width="8" height="15" fill="#5b2c6f" rx="1"/>
+    <rect x="540" y="145" width="8" height="15" fill="#5b2c6f" rx="1"/>
+    <rect x="552" y="145" width="8" height="15" fill="#5b2c6f" rx="1"/>
+    
+    <!-- 地盤（粘性土） -->
+    <rect x="450" y="160" width="140" height="50" fill="#c49a6c" stroke="#8b6f47" stroke-width="2"/>
+    <text x="520" y="190" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#6b4423" text-anchor="middle">粘性土</text>
+    
+    <!-- 説明 -->
+    <rect x="460" y="220" width="120" height="67" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" rx="3"/>
+    <text x="520" y="238" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">【適用土質】</text>
+    <text x="520" y="255" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">粘性土</text>
+    <text x="520" y="270" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50" text-anchor="middle">（こね返し効果あり）</text>
+    <text x="520" y="284" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" text-anchor="middle">✓ 適している</text>
+  </g>
+  
+  <!-- 重要ポイント -->
+  <g id="key_points">
+    <rect x="50" y="310" width="650" height="120" fill="#fff3cd" stroke="#f39c12" stroke-width="2" rx="5"/>
+    
+    <text x="375" y="335" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d68910" text-anchor="middle">【重要ポイント】</text>
+    
+    <text x="70" y="360" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">✓ ロードローラ → 砂質土に適する（表面が平滑）</text>
+    <text x="70" y="383" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">✓ タイヤローラ → 粘性土に適する（こね返しが少ない）</text>
+    <text x="70" y="406" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">✓ タンピングローラ → 粘性土に適する（突起が土中に食い込む）</text>
+  </g>
+</svg>

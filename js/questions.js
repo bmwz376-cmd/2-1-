@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 // 問題データを読み込む
 async function loadQuestions() {
     try {
-        const response = await fetch('data/questions.json');
+        // キャッシュバスティング: タイムスタンプを追加
+        const timestamp = new Date().getTime();
+        const response = await fetch(`data/questions.json?v=${timestamp}`);
         if (!response.ok) {
             throw new Error('問題データの読み込みに失敗しました');
         }
@@ -123,10 +125,12 @@ function applyFilters() {
                 question.title + ' ' + 
                 question.text + ' ' +
                 (question.choices ? question.choices.join(' ') : '')
-            ).toLowerCase();
+            );
             
-            // HTMLタグを除去
-            const plainText = searchableText.replace(/<[^>]*>/g, '');
+            // HTMLタグを除去（rubyタグのテキスト内容は保持）
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = searchableText;
+            const plainText = (tempDiv.textContent || tempDiv.innerText || '').toLowerCase();
             
             if (!plainText.includes(searchText)) {
                 return false;
@@ -207,8 +211,11 @@ function createQuestionItem(question, index) {
         }
     }
 
-    // HTMLタグを除去してプレビューを生成
-    const plainText = question.text.replace(/<[^>]*>/g, '');
+    // ルビを保持したままプレビューを生成
+    const textWithRuby = question.text;
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = textWithRuby;
+    const plainText = tempDiv.textContent || tempDiv.innerText || '';
     const preview = plainText.length > 80 ? plainText.substring(0, 80) + '...' : plainText;
 
     item.innerHTML = `
@@ -220,7 +227,7 @@ function createQuestionItem(question, index) {
             </div>
             ${statusHtml}
         </div>
-        <h3 class="question-title-text">問題 ${question.number}: ${question.title.replace(/<[^>]*>/g, '')}</h3>
+        <h3 class="question-title-text">問題 ${question.number}: ${question.title}</h3>
         <p class="question-preview">${preview}</p>
     `;
 

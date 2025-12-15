@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 13px; fill: #34495e; }
+      .value { font-family: Arial, sans-serif; font-size: 12px; fill: #e74c3c; font-weight: bold; }
+      .ground { fill: #8b4513; }
+      .water { fill: #4fc3f7; opacity: 0.6; }
+      .equipment { fill: #95a5a6; stroke: #2c3e50; stroke-width: 2; }
+      .pipe { fill: #7f8c8d; stroke: #34495e; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title" text-anchor="middle">地下水処理工法の比較</text>
+  
+  <!-- Method 1: Sump Pumping -->
+  <g transform="translate(50, 60)">
+    <text x="100" y="0" class="subtitle" text-anchor="middle">釜場排水工法</text>
+    
+    <!-- Ground -->
+    <rect class="ground" x="0" y="20" width="200" height="120"/>
+    
+    <!-- Excavation -->
+    <path d="M 50 20 L 150 20 L 150 100 L 50 100 Z" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Sump pit -->
+    <rect x="140" y="100" width="20" height="30" fill="#34495e"/>
+    
+    <!-- Water level -->
+    <path class="water" d="M 50 70 L 150 70 L 150 100 L 140 100 L 140 130 L 160 130 L 160 100 L 150 100 Z"/>
+    
+    <!-- Pump -->
+    <rect class="equipment" x="145" y="110" width="10" height="15"/>
+    
+    <text x="100" y="165" class="label" text-anchor="middle">深さ：5m以下</text>
+    <text x="100" y="182" class="value" text-anchor="middle">最も簡便</text>
+  </g>
+  
+  <!-- Method 2: Well Point -->
+  <g transform="translate(300, 60)">
+    <text x="100" y="0" class="subtitle" text-anchor="middle">ウェルポイント工法</text>
+    
+    <!-- Ground -->
+    <rect class="ground" x="0" y="20" width="200" height="120"/>
+    
+    <!-- Excavation -->
+    <path d="M 50 20 L 150 20 L 150 80 L 50 80 Z" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Well points -->
+    <rect class="pipe" x="30" y="20" width="4" height="90"/>
+    <rect class="pipe" x="60" y="20" width="4" height="90"/>
+    <rect class="pipe" x="90" y="20" width="4" height="90"/>
+    <rect class="pipe" x="120" y="20" width="4" height="90"/>
+    <rect class="pipe" x="150" y="20" width="4" height="90"/>
+    <rect class="pipe" x="180" y="20" width="4" height="90"/>
+    
+    <!-- Header pipe -->
+    <rect class="equipment" x="25" y="15" width="160" height="8"/>
+    
+    <!-- Vacuum pump -->
+    <rect class="equipment" x="85" y="0" width="30" height="15" rx="2"/>
+    
+    <!-- Original water level -->
+    <line x1="0" y1="50" x2="200" y2="50" stroke="#4fc3f7" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="205" y="53" class="label" font-size="10">元の水位</text>
+    
+    <!-- Lowered water level -->
+    <path class="water" d="M 0 80 L 200 80 L 200 140 L 0 140 Z"/>
+    
+    <text x="100" y="165" class="label" text-anchor="middle">深さ：4～6m/段</text>
+    <text x="100" y="182" class="value" text-anchor="middle">真空ポンプ使用</text>
+  </g>
+  
+  <!-- Method 3: Deep Well -->
+  <g transform="translate(550, 60)">
+    <text x="100" y="0" class="subtitle" text-anchor="middle">ディープウェル工法</text>
+    
+    <!-- Ground -->
+    <rect class="ground" x="0" y="20" width="200" height="120"/>
+    
+    <!-- Excavation -->
+    <path d="M 50 20 L 150 20 L 150 70 L 50 70 Z" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Deep wells -->
+    <rect class="pipe" x="30" y="20" width="6" height="110"/>
+    <rect class="pipe" x="90" y="20" width="6" height="110"/>
+    <rect class="pipe" x="150" y="20" width="6" height="110"/>
+    
+    <!-- Submersible pumps -->
+    <rect x="28" y="90" width="10" height="15" fill="#e74c3c"/>
+    <rect x="88" y="90" width="10" height="15" fill="#e74c3c"/>
+    <rect x="148" y="90" width="10" height="15" fill="#e74c3c"/>
+    
+    <!-- Original water level -->
+    <line x1="0" y1="45" x2="200" y2="45" stroke="#4fc3f7" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Lowered water level -->
+    <path class="water" d="M 0 70 L 200 70 L 200 140 L 0 140 Z"/>
+    
+    <text x="100" y="165" class="label" text-anchor="middle">深さ：20m以上可</text>
+    <text x="100" y="182" class="value" text-anchor="middle">被圧地下水対応</text>
+  </g>
+  
+  <!-- Comparison Table -->
+  <g transform="translate(50, 280)">
+    <text x="0" y="0" class="subtitle">比較表</text>
+    
+    <!-- Header -->
+    <rect x="0" y="15" width="150" height="35" fill="#3498db" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="150" y="15" width="150" height="35" fill="#3498db" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="300" y="15" width="150" height="35" fill="#3498db" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="450" y="15" width="250" height="35" fill="#3498db" stroke="#2c3e50" stroke-width="1"/>
+    
+    <text x="75" y="37" class="label" text-anchor="middle" fill="white" font-weight="bold">工法</text>
+    <text x="225" y="37" class="label" text-anchor="middle" fill="white" font-weight="bold">深さ</text>
+    <text x="375" y="37" class="label" text-anchor="middle" fill="white" font-weight="bold">特徴</text>
+    <text x="575" y="37" class="label" text-anchor="middle" fill="white" font-weight="bold">適用</text>
+    
+    <!-- Row 1 -->
+    <rect x="0" y="50" width="150" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="150" y="50" width="150" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="300" y="50" width="150" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="450" y="50" width="250" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    
+    <text x="75" y="70" class="label" text-anchor="middle">釜場排水</text>
+    <text x="225" y="70" class="label" text-anchor="middle">5m以下</text>
+    <text x="375" y="70" class="label" text-anchor="middle">最も簡便</text>
+    <text x="575" y="70" class="label" text-anchor="middle">浅い掘削</text>
+    
+    <!-- Row 2 -->
+    <rect x="0" y="80" width="150" height="30" fill="#fff" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="150" y="80" width="150" height="30" fill="#fff" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="300" y="80" width="150" height="30" fill="#fff" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="450" y="80" width="250" height="30" fill="#fff" stroke="#2c3e50" stroke-width="1"/>
+    
+    <text x="75" y="100" class="label" text-anchor="middle">ウェルポイント</text>
+    <text x="225" y="100" class="label" text-anchor="middle">4～6m/段</text>
+    <text x="375" y="100" class="label" text-anchor="middle">真空ポンプ</text>
+    <text x="575" y="100" class="label" text-anchor="middle">浅い地下水（多段可）</text>
+    
+    <!-- Row 3 -->
+    <rect x="0" y="110" width="150" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="150" y="110" width="150" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="300" y="110" width="150" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    <rect x="450" y="110" width="250" height="30" fill="#ecf0f1" stroke="#2c3e50" stroke-width="1"/>
+    
+    <text x="75" y="130" class="label" text-anchor="middle">ディープウェル</text>
+    <text x="225" y="130" class="label" text-anchor="middle">20m以上</text>
+    <text x="375" y="130" class="label" text-anchor="middle">水中ポンプ</text>
+    <text x="575" y="130" class="label" text-anchor="middle">深い被圧地下水</text>
+  </g>
+  
+  <!-- Important Notes -->
+  <g transform="translate(50, 460)">
+    <rect x="0" y="0" width="700" height="110" fill="#fff3cd" stroke="#f39c12" stroke-width="3" rx="5"/>
+    <text x="20" y="30" class="label" font-weight="bold" fill="#856404">【重要ポイント】</text>
+    <text x="20" y="52" class="label" fill="#856404">• 地下水位低下時は周辺地盤への影響（沈下等）を必ず考慮する</text>
+    <text x="20" y="72" class="label" fill="#856404">• ウェルポイント：1段で4～6m程度、真空ポンプ使用</text>
+    <text x="20" y="92" class="label" fill="#856404">• ディープウェル：深い被圧地下水に適している</text>
+  </g>
+</svg>

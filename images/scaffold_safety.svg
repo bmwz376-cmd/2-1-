@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <!-- 背景 -->
+  <rect width="700" height="500" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">足場の安全基準</text>
+  
+  <!-- 建物 -->
+  <rect x="450" y="100" width="150" height="350" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="2"/>
+  
+  <!-- 足場 -->
+  <g id="scaffold">
+    <!-- 支柱 -->
+    <rect x="380" y="100" width="10" height="350" fill="#34495e"/>
+    <rect x="350" y="100" width="10" height="350" fill="#34495e"/>
+    
+    <!-- 作業床1 -->
+    <rect x="250" y="350" width="150" height="12" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    <text x="245" y="370" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="end">作業床</text>
+    
+    <!-- 幅の寸法線 -->
+    <line x1="250" y1="380" x2="400" y2="380" stroke="#e74c3c" stroke-width="2" marker-start="url(#arrowleft)" marker-end="url(#arrowright)"/>
+    <text x="325" y="395" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e74c3c" text-anchor="middle">幅 ≥ 40cm</text>
+    
+    <!-- 手すり -->
+    <line x1="250" y1="265" x2="400" y2="265" stroke="#2980b9" stroke-width="4"/>
+    <text x="240" y="270" font-family="Arial, sans-serif" font-size="11" fill="#2980b9" text-anchor="end">手すり</text>
+    
+    <!-- 手すりの高さ寸法線 -->
+    <line x1="420" y1="350" x2="420" y2="265" stroke="#27ae60" stroke-width="2" marker-start="url(#arrowdown)" marker-end="url(#arrowup)"/>
+    <text x="435" y="310" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#27ae60">≥ 85cm</text>
+    
+    <!-- 中桟 -->
+    <line x1="250" y1="307" x2="400" y2="307" stroke="#3498db" stroke-width="3"/>
+    <text x="240" y="312" font-family="Arial, sans-serif" font-size="11" fill="#3498db" text-anchor="end">中桟</text>
+    
+    <!-- 中桟の高さ寸法線 -->
+    <line x1="440" y1="350" x2="440" y2="307" stroke="#9b59b6" stroke-width="2" marker-start="url(#arrowdown2)" marker-end="url(#arrowup2)"/>
+    <text x="455" y="330" font-family="Arial, sans-serif" font-size="12" fill="#9b59b6">35～50cm</text>
+    
+    <!-- 支柱 -->
+    <rect x="250" y="100" width="8" height="350" fill="#34495e"/>
+    <rect x="392" y="100" width="8" height="350" fill="#34495e"/>
+    
+    <!-- 床材の隙間を示す -->
+    <rect x="250" y="350" width="70" height="12" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    <rect x="323" y="350" width="77" height="12" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    
+    <!-- 隙間 -->
+    <line x1="320" y1="345" x2="320" y2="367" stroke="#e74c3c" stroke-width="2"/>
+    <line x1="323" y1="345" x2="323" y2="367" stroke="#e74c3c" stroke-width="2"/>
+    <text x="290" y="335" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#e74c3c">隙間 ≤ 3cm</text>
+    <path d="M 321.5 340 L 321.5 330" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowup3)"/>
+  </g>
+  
+  <!-- 作業員（模式図） -->
+  <g id="worker">
+    <circle cx="310" cy="320" r="10" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="310" y1="330" x2="310" y2="350" stroke="#2c3e50" stroke-width="3"/>
+    <line x1="310" y1="340" x2="300" y2="350" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="310" y1="340" x2="320" y2="350" stroke="#2c3e50" stroke-width="2"/>
+  </g>
+  
+  <!-- 安全基準表 -->
+  <g id="safety_standards">
+    <rect x="30" y="100" width="200" height="180" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="5"/>
+    
+    <text x="130" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50" text-anchor="middle">【安全基準】</text>
+    
+    <text x="40" y="150" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">✓ 作業床幅</text>
+    <text x="50" y="168" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">　40cm以上</text>
+    
+    <text x="40" y="193" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">✓ 手すり高さ</text>
+    <text x="50" y="211" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">　85cm以上</text>
+    
+    <text x="40" y="236" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">✓ 床材の隙間</text>
+    <text x="50" y="254" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">　3cm以下</text>
+    
+    <rect x="35" y="263" width="160" height="1" fill="#95a5a6"/>
+    <text x="40" y="275" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">※労働安全衛生規則 第563条</text>
+  </g>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowleft" markerWidth="10" markerHeight="10" refX="1" refY="5" orient="auto">
+      <polygon points="10 0, 10 10, 0 5" fill="#e74c3c" />
+    </marker>
+    <marker id="arrowright" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#e74c3c" />
+    </marker>
+    <marker id="arrowup" markerWidth="10" markerHeight="10" refX="5" refY="1" orient="auto">
+      <polygon points="0 10, 10 10, 5 0" fill="#27ae60" />
+    </marker>
+    <marker id="arrowdown" markerWidth="10" markerHeight="10" refX="5" refY="9" orient="auto">
+      <polygon points="0 0, 5 10, 10 0" fill="#27ae60" />
+    </marker>
+    <marker id="arrowup2" markerWidth="10" markerHeight="10" refX="5" refY="1" orient="auto">
+      <polygon points="0 10, 10 10, 5 0" fill="#9b59b6" />
+    </marker>
+    <marker id="arrowdown2" markerWidth="10" markerHeight="10" refX="5" refY="9" orient="auto">
+      <polygon points="0 0, 5 10, 10 0" fill="#9b59b6" />
+    </marker>
+    <marker id="arrowup3" markerWidth="8" markerHeight="8" refX="4" refY="1" orient="auto">
+      <polygon points="0 8, 8 8, 4 0" fill="#e74c3c" />
+    </marker>
+  </defs>
+</svg>

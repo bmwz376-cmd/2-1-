@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="40" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    施工管理の4大管理
+  </text>
+  
+  <!-- 中央の施工管理 -->
+  <circle cx="400" cy="300" r="60" fill="#3498db" stroke="#2c3e50" stroke-width="3"/>
+  <text x="400" y="295" font-size="16" font-weight="bold" text-anchor="middle" fill="white">施工管理</text>
+  <text x="400" y="315" font-size="12" text-anchor="middle" fill="white">Construction</text>
+  <text x="400" y="330" font-size="12" text-anchor="middle" fill="white">Management</text>
+  
+  <!-- 1. 品質管理（右上） -->
+  <g id="quality-management">
+    <circle cx="580" cy="150" r="80" fill="white" stroke="#2ecc71" stroke-width="3"/>
+    <text x="580" y="135" font-size="18" font-weight="bold" text-anchor="middle" fill="#2ecc71">品質管理</text>
+    <text x="580" y="155" font-size="12" text-anchor="middle" fill="#555">Quality Control</text>
+    
+    <!-- アイコン：チェックマーク -->
+    <circle cx="580" cy="180" r="20" fill="#2ecc71"/>
+    <path d="M570 180 L577 187 L590 170" stroke="white" stroke-width="3" fill="none"/>
+    
+    <!-- キーワード -->
+    <text x="580" y="215" font-size="11" text-anchor="middle" fill="#666">・試験</text>
+    <text x="580" y="230" font-size="11" text-anchor="middle" fill="#666">・検査</text>
+    
+    <!-- 接続線 -->
+    <line x1="460" y1="280" x2="520" y2="190" stroke="#2ecc71" stroke-width="2"/>
+  </g>
+  
+  <!-- 2. 工程管理（右下） -->
+  <g id="schedule-management">
+    <circle cx="580" cy="450" r="80" fill="white" stroke="#e74c3c" stroke-width="3"/>
+    <text x="580" y="435" font-size="18" font-weight="bold" text-anchor="middle" fill="#e74c3c">工程管理</text>
+    <text x="580" y="455" font-size="12" text-anchor="middle" fill="#555">Schedule Control</text>
+    
+    <!-- アイコン：カレンダー -->
+    <rect x="560" y="470" width="40" height="30" fill="#e74c3c" stroke="white" stroke-width="2" rx="3"/>
+    <rect x="560" y="470" width="40" height="8" fill="white"/>
+    <line x1="565" y1="485" x2="575" y2="485" stroke="white" stroke-width="2"/>
+    <line x1="565" y1="492" x2="575" y2="492" stroke="white" stroke-width="2"/>
+    <line x1="585" y1="485" x2="595" y2="485" stroke="white" stroke-width="2"/>
+    
+    <!-- キーワード -->
+    <text x="580" y="520" font-size="11" text-anchor="middle" fill="#666">・工程表</text>
+    <text x="580" y="535" font-size="11" text-anchor="middle" fill="#666">・工期</text>
+    
+    <!-- 接続線 -->
+    <line x1="460" y1="330" x2="520" y2="410" stroke="#e74c3c" stroke-width="2"/>
+  </g>
+  
+  <!-- 3. 原価管理（左下） -->
+  <g id="cost-management">
+    <circle cx="220" cy="450" r="80" fill="white" stroke="#f39c12" stroke-width="3"/>
+    <text x="220" y="435" font-size="18" font-weight="bold" text-anchor="middle" fill="#f39c12">原価管理</text>
+    <text x="220" y="455" font-size="12" text-anchor="middle" fill="#555">Cost Control</text>
+    
+    <!-- アイコン：円マーク -->
+    <circle cx="220" cy="485" r="20" fill="#f39c12"/>
+    <text x="220" y="495" font-size="24" font-weight="bold" text-anchor="middle" fill="white">¥</text>
+    
+    <!-- キーワード -->
+    <text x="220" y="520" font-size="11" text-anchor="middle" fill="#666">・材料費</text>
+    <text x="220" y="535" font-size="11" text-anchor="middle" fill="#666">・労務費</text>
+    
+    <!-- 接続線 -->
+    <line x1="340" y1="330" x2="280" y2="410" stroke="#f39c12" stroke-width="2"/>
+  </g>
+  
+  <!-- 4. 安全管理（左上） -->
+  <g id="safety-management">
+    <circle cx="220" cy="150" r="80" fill="white" stroke="#9b59b6" stroke-width="3"/>
+    <text x="220" y="135" font-size="18" font-weight="bold" text-anchor="middle" fill="#9b59b6">安全管理</text>
+    <text x="220" y="155" font-size="12" text-anchor="middle" fill="#555">Safety Control</text>
+    
+    <!-- アイコン：ヘルメット -->
+    <ellipse cx="220" cy="180" rx="18" ry="15" fill="#9b59b6"/>
+    <rect x="210" y="180" width="20" height="3" fill="#9b59b6"/>
+    <path d="M202 180 Q220 165 238 180" fill="none" stroke="white" stroke-width="2"/>
+    
+    <!-- キーワード -->
+    <text x="220" y="215" font-size="11" text-anchor="middle" fill="#666">・災害防止</text>
+    <text x="220" y="230" font-size="11" text-anchor="middle" fill="#666">・KY活動</text>
+    
+    <!-- 接続線 -->
+    <line x1="340" y1="280" x2="280" y2="190" stroke="#9b59b6" stroke-width="2"/>
+  </g>
+  
+  <!-- 補足説明 -->
+  <g id="description">
+    <rect x="50" y="70" width="200" height="100" fill="white" stroke="#34495e" stroke-width="2" rx="5"/>
+    <text x="150" y="95" font-size="14" font-weight="bold" text-anchor="middle" fill="#34495e">
+      4大管理のポイント
+    </text>
+    <text x="60" y="118" font-size="11" fill="#555">✓ QCDSの確保</text>
+    <text x="60" y="135" font-size="11" fill="#555">✓ 相互に関連</text>
+    <text x="60" y="152" font-size="11" fill="#555">✓ バランスが重要</text>
+  </g>
+  
+  <!-- PDCA補足 -->
+  <g id="pdca">
+    <rect x="550" y="70" width="200" height="100" fill="white" stroke="#16a085" stroke-width="2" rx="5"/>
+    <text x="650" y="95" font-size="14" font-weight="bold" text-anchor="middle" fill="#16a085">
+      PDCAサイクル
+    </text>
+    <text x="560" y="118" font-size="11" fill="#555">Plan（計画）</text>
+    <text x="560" y="135" font-size="11" fill="#555">Do（実施）</text>
+    <text x="560" y="152" font-size="11" fill="#555">Check（確認）</text>
+    <text x="650" y="118" font-size="11" fill="#555">→</text>
+    <text x="650" y="135" font-size="11" fill="#555">→</text>
+    <text x="650" y="152" font-size="11" fill="#555">→</text>
+    <text x="680" y="118" font-size="11" fill="#555">Action（処置）</text>
+  </g>
+  
+  <!-- 注記 -->
+  <text x="400" y="580" font-size="12" text-anchor="middle" fill="#666">
+    ※ 施工管理は、品質・工程・原価・安全の4大管理を総合的に実施
+  </text>
+</svg>

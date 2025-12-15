@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 16px; fill: #34495e; }
+      .machine { font-family: Arial, sans-serif; font-size: 18px; fill: #2c3e50; font-weight: bold; }
+      .distance { font-family: Arial, sans-serif; font-size: 16px; fill: #e74c3c; font-weight: bold; }
+      .bar { stroke: #2c3e50; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title" text-anchor="middle">建設機械の経済的な運搬距離</text>
+  
+  <!-- Distance scale -->
+  <g transform="translate(50, 80)">
+    <!-- Scale line -->
+    <line x1="0" y1="0" x2="700" y2="0" stroke="#95a5a6" stroke-width="2"/>
+    
+    <!-- Scale markers -->
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#95a5a6" stroke-width="2"/>
+    <text x="0" y="25" class="label" text-anchor="middle" font-size="12">0m</text>
+    
+    <line x1="70" y1="-5" x2="70" y2="5" stroke="#95a5a6" stroke-width="2"/>
+    <text x="70" y="25" class="label" text-anchor="middle" font-size="12">100m</text>
+    
+    <line x1="210" y1="-5" x2="210" y2="5" stroke="#95a5a6" stroke-width="2"/>
+    <text x="210" y="25" class="label" text-anchor="middle" font-size="12">300m</text>
+    
+    <line x1="350" y1="-5" x2="350" y2="5" stroke="#95a5a6" stroke-width="2"/>
+    <text x="350" y="25" class="label" text-anchor="middle" font-size="12">500m</text>
+    
+    <line x1="490" y1="-5" x2="490" y2="5" stroke="#95a5a6" stroke-width="2"/>
+    <text x="490" y="25" class="label" text-anchor="middle" font-size="12">700m</text>
+    
+    <line x1="630" y1="-5" x2="630" y2="5" stroke="#95a5a6" stroke-width="2"/>
+    <text x="630" y="25" class="label" text-anchor="middle" font-size="12">1000m</text>
+    
+    <line x1="700" y1="-5" x2="700" y2="5" stroke="#95a5a6" stroke-width="2"/>
+    <text x="700" y="25" class="label" text-anchor="middle" font-size="12">3000m</text>
+  </g>
+  
+  <!-- Bulldozer -->
+  <g transform="translate(50, 150)">
+    <rect x="0" y="0" width="42" height="40" fill="#f39c12" class="bar" rx="3"/>
+    <text x="-120" y="25" class="machine">ブルドーザ</text>
+    <text x="21" y="60" class="distance" text-anchor="middle">50～60m</text>
+    <text x="21" y="80" class="label" text-anchor="middle" font-size="12">短距離</text>
+  </g>
+  
+  <!-- Scraper -->
+  <g transform="translate(50, 220)">
+    <rect x="70" y="0" width="490" height="40" fill="#3498db" class="bar" rx="3"/>
+    <text x="-120" y="25" class="machine">スクレーパ</text>
+    <text x="315" y="60" class="distance" text-anchor="middle">100～3,000m</text>
+    <text x="315" y="80" class="label" text-anchor="middle" font-size="12">中・長距離</text>
+  </g>
+  
+  <!-- Dump Truck -->
+  <g transform="translate(50, 290)">
+    <rect x="210" y="0" width="490" height="40" fill="#27ae60" class="bar" rx="3"/>
+    <text x="-120" y="25" class="machine">ダンプトラック</text>
+    <text x="455" y="60" class="distance" text-anchor="middle">300m以上</text>
+    <text x="455" y="80" class="label" text-anchor="middle" font-size="12">長距離</text>
+  </g>
+  
+  <!-- Notes -->
+  <g transform="translate(50, 380)">
+    <rect x="0" y="0" width="700" height="100" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="5"/>
+    <text x="20" y="30" class="label" font-weight="bold">重要ポイント：</text>
+    <text x="20" y="55" class="label">• ブルドーザ：50～60m程度（掘削・運搬・敷均し・締固めを一貫施工）</text>
+    <text x="20" y="78" class="label">• スクレーパ：100～3,000m（掘削・積込・運搬・敷均しを一貫施工）</text>
+  </g>
+</svg>

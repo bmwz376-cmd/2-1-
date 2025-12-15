@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 500">
+  <!-- 背景 -->
+  <rect width="850" height="500" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="425" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">軟弱地盤対策工法</text>
+  
+  <!-- サンドドレーン -->
+  <g id="sand_drain">
+    <text x="110" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">サンドドレーン</text>
+    
+    <!-- 地盤 -->
+    <rect x="20" y="80" width="180" height="150" fill="#b39870" opacity="0.7"/>
+    
+    <!-- 載荷盛土 -->
+    <path d="M 20 80 L 50 60 L 150 60 L 180 80 Z" fill="#8b7355" stroke="#6b5843" stroke-width="2"/>
+    <text x="100" y="73" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">載荷盛土</text>
+    
+    <!-- 砂の柱（ドレーン） -->
+    <rect x="45" y="80" width="10" height="150" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <rect x="75" y="80" width="10" height="150" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <rect x="105" y="80" width="10" height="150" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <rect x="135" y="80" width="10" height="150" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <rect x="165" y="80" width="10" height="150" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    
+    <!-- 水の排出 -->
+    <path d="M 50 150 Q 40 145 35 140" fill="none" stroke="#3498db" stroke-width="2" marker-end="url(#water_arrow)"/>
+    <path d="M 80 160 Q 70 155 65 150" fill="none" stroke="#3498db" stroke-width="2" marker-end="url(#water_arrow)"/>
+    <path d="M 110 170 Q 100 165 95 160" fill="none" stroke="#3498db" stroke-width="2" marker-end="url(#water_arrow)"/>
+    
+    <text x="100" y="255" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">砂柱で排水促進</text>
+  </g>
+  
+  <!-- 載荷盛土 -->
+  <g id="preloading">
+    <text x="330" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e67e22">載荷盛土工法</text>
+    
+    <!-- 地盤（軟弱層） -->
+    <rect x="240" y="120" width="180" height="110" fill="#b39870" opacity="0.7"/>
+    <text x="330" y="180" font-family="Arial, sans-serif" font-size="11" fill="#6b5843" text-anchor="middle">軟弱層</text>
+    
+    <!-- 載荷盛土 -->
+    <path d="M 240 120 L 265 80 L 355 80 L 380 100 L 390 110 L 410 120 Z" fill="#8b7355" stroke="#6b5843" stroke-width="2"/>
+    
+    <!-- 荷重の矢印 -->
+    <path d="M 290 95 L 290 115" stroke="#e74c3c" stroke-width="3" marker-end="url(#load_arrow)"/>
+    <path d="M 320 90 L 320 115" stroke="#e74c3c" stroke-width="3" marker-end="url(#load_arrow)"/>
+    <path d="M 350 90 L 350 115" stroke="#e74c3c" stroke-width="3" marker-end="url(#load_arrow)"/>
+    
+    <text x="300" y="75" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">荷重</text>
+    
+    <!-- 圧密 -->
+    <line x1="240" y1="215" x2="420" y2="215" stroke="#27ae60" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="330" y="210" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" text-anchor="middle">圧密後</text>
+    
+    <text x="330" y="255" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">盛土荷重で圧密</text>
+  </g>
+  
+  <!-- サンドコンパクションパイル -->
+  <g id="scp">
+    <text x="560" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">SCP工法</text>
+    <text x="530" y="75" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">（サンドコンパクションパイル）</text>
+    
+    <!-- 地盤 -->
+    <rect x="460" y="95" width="200" height="135" fill="#b39870" opacity="0.7"/>
+    
+    <!-- 砂杭 -->
+    <circle cx="490" cy="135" r="18" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <circle cx="540" cy="135" r="18" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <circle cx="590" cy="135" r="18" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <circle cx="640" cy="135" r="18" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    
+    <circle cx="515" cy="175" r="18" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <circle cx="565" cy="175" r="18" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    <circle cx="615" cy="175" r="18" fill="#f4d03f" stroke="#f39c12" stroke-width="2"/>
+    
+    <!-- 締固め効果 -->
+    <circle cx="490" cy="135" r="28" fill="none" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <circle cx="540" cy="135" r="28" fill="none" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="2,2"/>
+    
+    <text x="560" y="255" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">砂杭で地盤締固め</text>
+  </g>
+  
+  <!-- 深層混合処理 -->
+  <g id="deep_mixing">
+    <text x="760" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9b59b6">深層混合処理</text>
+    
+    <!-- 地盤 -->
+    <rect x="690" y="95" width="140" height="135" fill="#b39870" opacity="0.7"/>
+    
+    <!-- 固化材混合部分 -->
+    <rect x="710" y="95" width="30" height="135" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    <rect x="750" y="95" width="30" height="135" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    <rect x="790" y="95" width="30" height="135" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+    
+    <!-- セメント記号 -->
+    <text x="725" y="165" font-family="Arial, sans-serif" font-size="16" fill="#ecf0f1" text-anchor="middle">C</text>
+    <text x="765" y="165" font-family="Arial, sans-serif" font-size="16" fill="#ecf0f1" text-anchor="middle">C</text>
+    <text x="805" y="165" font-family="Arial, sans-serif" font-size="16" fill="#ecf0f1" text-anchor="middle">C</text>
+    
+    <text x="760" y="255" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">固化材を混合</text>
+  </g>
+  
+  <!-- 説明表 -->
+  <g id="explanations">
+    <rect x="50" y="290" width="750" height="190" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2" rx="5"/>
+    
+    <text x="425" y="315" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50" text-anchor="middle">【各工法の特徴】</text>
+    
+    <!-- サンドドレーン -->
+    <text x="70" y="345" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#3498db">サンドドレーン工法</text>
+    <text x="80" y="365" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">• 砂の柱を造り排水を促進</text>
+    <text x="80" y="383" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">• 圧密を早める（鉛直ドレーン工法）</text>
+    
+    <!-- 載荷盛土 -->
+    <text x="70" y="410" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e67e22">載荷盛土工法（プレロード）</text>
+    <text x="80" y="430" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">• 盛土の荷重で地盤を圧密</text>
+    <text x="80" y="448" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">• 時間をかけて沈下させる</text>
+    
+    <!-- SCP -->
+    <text x="450" y="345" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#27ae60">サンドコンパクションパイル（SCP）</text>
+    <text x="460" y="365" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">• 砂の杭を造り周辺地盤を締固める</text>
+    <text x="460" y="383" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">• 砂質地盤の改良に適する</text>
+    
+    <!-- 深層混合処理 -->
+    <text x="450" y="410" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#9b59b6">深層混合処理工法</text>
+    <text x="460" y="430" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">• セメント等の固化材を混合</text>
+    <text x="460" y="448" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">• 水ではなく固化材を注入！</text>
+  </g>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="water_arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#3498db" />
+    </marker>
+    <marker id="load_arrow" markerWidth="10" markerHeight="10" refX="5" refY="9" orient="auto">
+      <polygon points="0 0, 5 10, 10 0" fill="#e74c3c" />
+    </marker>
+  </defs>
+</svg>

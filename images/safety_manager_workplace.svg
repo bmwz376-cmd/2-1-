@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Title -->
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    安全管理者の選任と作業場所の配置
+  </text>
+  <text x="400" y="55" font-size="14" text-anchor="middle" fill="#7f8c8d">
+    (労働安全衛生法 第11条、第12条)
+  </text>
+  
+  <!-- Construction Sites Overview -->
+  <g id="construction-sites">
+    <!-- Site A (Main Office Location) -->
+    <g id="site-a">
+      <rect x="80" y="100" width="280" height="200" fill="#e8f4f8" stroke="#3498db" stroke-width="3" rx="5"/>
+      <text x="220" y="130" font-size="16" font-weight="bold" text-anchor="middle" fill="#3498db">
+        現場A (本社所在地)
+      </text>
+      
+      <!-- Safety Manager -->
+      <circle cx="220" cy="180" r="30" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+      <text x="220" y="190" font-size="24" text-anchor="middle" fill="#fff">👷</text>
+      
+      <rect x="120" y="220" width="200" height="50" fill="#27ae60" rx="3"/>
+      <text x="220" y="240" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">
+        安全管理者
+      </text>
+      <text x="220" y="258" font-size="11" text-anchor="middle" fill="#fff">
+        (本社常駐)
+      </text>
+      
+      <!-- Workers -->
+      <text x="220" y="285" font-size="12" text-anchor="middle" fill="#2c3e50">
+        作業員: 50名以上
+      </text>
+    </g>
+    
+    <!-- Site B (Remote Site) -->
+    <g id="site-b">
+      <rect x="440" y="100" width="280" height="200" fill="#fff5e6" stroke="#f39c12" stroke-width="3" rx="5"/>
+      <text x="580" y="130" font-size="16" font-weight="bold" text-anchor="middle" fill="#e67e22">
+        現場B (遠隔地)
+      </text>
+      
+      <!-- No Safety Manager -->
+      <circle cx="580" cy="180" r="30" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+      <text x="580" y="195" font-size="36" text-anchor="middle" fill="#fff">✗</text>
+      
+      <rect x="480" y="220" width="200" height="50" fill="#e74c3c" rx="3"/>
+      <text x="580" y="240" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">
+        安全管理者 不在
+      </text>
+      <text x="580" y="258" font-size="11" text-anchor="middle" fill="#fff">
+        (常駐なし)
+      </text>
+      
+      <!-- Workers -->
+      <text x="580" y="285" font-size="12" text-anchor="middle" fill="#2c3e50">
+        作業員: 50名以上
+      </text>
+    </g>
+  </g>
+  
+  <!-- Legal Requirements -->
+  <g id="legal-requirements">
+    <rect x="50" y="330" width="700" height="240" fill="#ecf0f1" stroke="#34495e" stroke-width="2" rx="5"/>
+    
+    <text x="400" y="360" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      法令の規定 (労働安全衛生法)
+    </text>
+    
+    <!-- Requirement 1 -->
+    <g id="req1">
+      <rect x="80" y="380" width="640" height="50" fill="#fff" stroke="#3498db" stroke-width="2" rx="3"/>
+      <text x="100" y="402" font-size="13" fill="#2c3e50">
+        <tspan font-weight="bold">第11条:</tspan> 常時50人以上の労働者を使用する事業場では
+      </text>
+      <text x="120" y="420" font-size="13" fill="#2c3e50">
+        安全管理者を選任しなければならない
+      </text>
+    </g>
+    
+    <!-- Requirement 2 (KEY POINT) -->
+    <g id="req2">
+      <rect x="80" y="445" width="640" height="50" fill="#fff5e6" stroke="#e67e22" stroke-width="3" rx="3"/>
+      <circle cx="100" cy="470" r="12" fill="#e67e22"/>
+      <text x="100" y="475" font-size="10" font-weight="bold" text-anchor="middle" fill="#fff">!</text>
+      <text x="125" y="467" font-size="13" fill="#d35400" font-weight="bold">
+        第12条: 安全管理者は、作業場を巡視し、設備・作業方法等に
+      </text>
+      <text x="145" y="485" font-size="13" fill="#d35400" font-weight="bold">
+        危険の恐れがあるときは、直ちに必要な措置を講じなければならない
+      </text>
+    </g>
+    
+    <!-- Conclusion -->
+    <g id="conclusion">
+      <rect x="80" y="510" width="640" height="50" fill="#e8f4f8" stroke="#27ae60" stroke-width="2" rx="3"/>
+      <text x="400" y="530" font-size="14" font-weight="bold" text-anchor="middle" fill="#27ae60">
+        ✓ 正解: 安全管理者は各作業場所に専任で配置すべきである
+      </text>
+      <text x="400" y="548" font-size="12" text-anchor="middle" fill="#2c3e50">
+        (現場Bにも安全管理者を配置し、常時巡視・措置できる体制が必要)
+      </text>
+    </g>
+  </g>
+</svg>

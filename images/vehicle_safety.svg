@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450">
+  <!-- 背景 -->
+  <rect width="750" height="450" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="375" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">車両系建設機械の安全管理</text>
+  
+  <!-- 運転席を離れる際の措置 -->
+  <g id="leaving_operator_seat">
+    <text x="200" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#e74c3c">運転席を離れる際の措置</text>
+    
+    <rect x="50" y="80" width="350" height="140" fill="#fadbd8" stroke="#e74c3c" stroke-width="3" rx="5"/>
+    
+    <!-- バックホウ（簡略図） -->
+    <rect x="80" y="110" width="50" height="35" fill="#f39c12" rx="3"/>
+    <circle cx="95" cy="153" r="8" fill="#2c3e50"/>
+    <circle cx="115" cy="153" r="8" fill="#2c3e50"/>
+    <line x1="130" y1="120" x2="160" y2="135" stroke="#34495e" stroke-width="5"/>
+    
+    <!-- バケットを地上に -->
+    <path d="M 160 135 L 170 142 L 168 146 L 158 139 Z" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="160" y1="145" x2="175" y2="145" stroke="#27ae60" stroke-width="2"/>
+    <text x="185" y="150" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">地上に降ろす</text>
+    
+    <!-- チェックリスト -->
+    <g id="checklist">
+      <text x="70" y="185" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">【必須措置】</text>
+      <text x="80" y="205" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ バケット等を地上に降ろす</text>
+      <text x="250" y="110" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ エンジンを止める</text>
+      <text x="250" y="130" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ ブレーキをかける</text>
+      <text x="250" y="150" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">✓ キーを抜く</text>
+    </g>
+  </g>
+  
+  <!-- 始業前点検 -->
+  <g id="pre_operation_check">
+    <text x="580" y="60" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#3498db">始業前点検</text>
+    
+    <rect x="450" y="80" width="270" height="140" fill="#d6eaf8" stroke="#3498db" stroke-width="3" rx="5"/>
+    
+    <text x="585" y="105" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold" text-anchor="middle">【点検項目】</text>
+    
+    <text x="470" y="130" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">✓ ブレーキの機能</text>
+    <text x="470" y="150" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">✓ クラッチの機能</text>
+    <text x="470" y="170" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">✓ 油圧装置の機能</text>
+    <text x="470" y="190" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">✓ 操作装置の機能</text>
+    <text x="470" y="210" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">✓ 警報装置の機能</text>
+  </g>
+  
+  <!-- 作業半径と立入禁止 -->
+  <g id="working_radius">
+    <text x="375" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#9b59b6">作業半径内の立入禁止</text>
+    
+    <rect x="50" y="270" width="650" height="160" fill="#f4ecf7" stroke="#9b59b6" stroke-width="3" rx="5"/>
+    
+    <!-- バックホウ -->
+    <rect x="300" y="320" width="50" height="30" fill="#f39c12" rx="3"/>
+    <line x1="350" y1="330" x2="420" y2="360" stroke="#34495e" stroke-width="5"/>
+    
+    <!-- 作業半径 -->
+    <circle cx="325" cy="335" r="100" fill="none" stroke="#e74c3c" stroke-width="3" stroke-dasharray="10,5"/>
+    
+    <!-- 作業員（外側・安全） -->
+    <g id="worker_safe">
+      <circle cx="480" cy="335" r="8" fill="#27ae60"/>
+      <line x1="480" y1="343" x2="480" y2="360" stroke="#27ae60" stroke-width="2"/>
+      <text x="480" y="375" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="bold" text-anchor="middle">作業半径外</text>
+      <text x="480" y="390" font-family="Arial, sans-serif" font-size="10" fill="#27ae60" text-anchor="middle">✓ 安全</text>
+    </g>
+    
+    <!-- 作業員（内側・危険） -->
+    <g id="worker_danger">
+      <circle cx="380" cy="335" r="8" fill="#e74c3c"/>
+      <line x1="380" y1="343" x2="380" y2="360" stroke="#e74c3c" stroke-width="2"/>
+      <line x1="370" y1="325" x2="390" y2="345" stroke="#e74c3c" stroke-width="3"/>
+      <line x1="390" y1="325" x2="370" y2="345" stroke="#e74c3c" stroke-width="3"/>
+      <text x="380" y="315" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="bold" text-anchor="middle">立入禁止</text>
+    </g>
+    
+    <!-- 誘導者も禁止 -->
+    <rect x="100" y="375" width="250" height="40" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" rx="3"/>
+    <text x="225" y="395" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c" font-weight="bold" text-anchor="middle">誘導者も作業半径内に</text>
+    <text x="225" y="410" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c" font-weight="bold" text-anchor="middle">立ち入ってはならない</text>
+    
+    <!-- 制限速度 -->
+    <rect x="450" y="375" width="180" height="40" fill="#d5f4e6" stroke="#27ae60" stroke-width="2" rx="3"/>
+    <text x="540" y="395" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">制限速度を定めて</text>
+    <text x="540" y="410" font-family="Arial, sans-serif" font-size="11" fill="#27ae60" text-anchor="middle">運転者に周知</text>
+  </g>
+</svg>

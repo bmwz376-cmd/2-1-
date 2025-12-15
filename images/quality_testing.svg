@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="40" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    品質試験の種類と方法
+  </text>
+  
+  <!-- コンクリート試験 -->
+  <g id="concrete-test">
+    <rect x="50" y="80" width="340" height="220" fill="white" stroke="#3498db" stroke-width="2" rx="10"/>
+    <text x="220" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#3498db">
+      コンクリート試験
+    </text>
+    
+    <!-- スランプ試験 -->
+    <g id="slump-test">
+      <!-- スランプコーン -->
+      <path d="M80 180 L100 240 L140 240 L120 180 Z" fill="#ddd" stroke="#333" stroke-width="2"/>
+      <text x="110" y="265" font-size="12" text-anchor="middle" fill="#2c3e50">スランプコーン</text>
+      
+      <!-- コンクリート -->
+      <ellipse cx="120" cy="220" rx="30" ry="8" fill="#888"/>
+      <path d="M90 220 L90 200 Q105 195 120 195 Q135 195 150 200 L150 220" fill="#888" stroke="#333" stroke-width="1"/>
+      
+      <!-- スランプ値 -->
+      <line x1="155" y1="195" x2="155" y2="220" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowred)"/>
+      <text x="165" y="210" font-size="14" font-weight="bold" fill="#e74c3c">スランプ</text>
+    </g>
+    
+    <!-- 圧縮強度試験 -->
+    <g id="compression-test">
+      <!-- 試験機 -->
+      <rect x="210" y="140" width="60" height="20" fill="#666"/>
+      <rect x="220" y="160" width="40" height="40" fill="#ddd" stroke="#333" stroke-width="2"/>
+      <rect x="210" y="200" width="60" height="10" fill="#666"/>
+      
+      <!-- 供試体 -->
+      <rect x="225" y="165" width="30" height="30" fill="#888" stroke="#333" stroke-width="2"/>
+      
+      <!-- 荷重矢印 -->
+      <path d="M240 130 L240 140" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowred)"/>
+      <text x="245" y="135" font-size="12" fill="#e74c3c">荷重</text>
+      
+      <text x="240" y="230" font-size="12" text-anchor="middle" fill="#2c3e50">圧縮試験</text>
+    </g>
+    
+    <!-- 空気量測定 -->
+    <g id="air-content">
+      <circle cx="330" cy="180" r="35" fill="white" stroke="#333" stroke-width="2"/>
+      <circle cx="330" cy="180" r="25" fill="#e8f4f8"/>
+      <text x="330" y="185" font-size="16" font-weight="bold" text-anchor="middle" fill="#3498db">4.5%</text>
+      <text x="330" y="230" font-size="12" text-anchor="middle" fill="#2c3e50">空気量</text>
+    </g>
+  </g>
+  
+  <!-- 土質試験 -->
+  <g id="soil-test">
+    <rect x="410" y="80" width="340" height="220" fill="white" stroke="#2ecc71" stroke-width="2" rx="10"/>
+    <text x="580" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#2ecc71">
+      土質試験
+    </text>
+    
+    <!-- 締固め試験 -->
+    <g id="compaction-test">
+      <!-- ランマー -->
+      <rect x="440" y="140" width="30" height="60" fill="#666" stroke="#333" stroke-width="2"/>
+      <circle cx="455" cy="135" r="8" fill="#333"/>
+      
+      <!-- モールド -->
+      <ellipse cx="455" cy="200" rx="25" ry="5" fill="#8b4513"/>
+      <rect x="430" y="200" width="50" height="40" fill="#8b4513" stroke="#333" stroke-width="2"/>
+      <ellipse cx="455" cy="240" rx="25" ry="5" fill="#8b4513"/>
+      
+      <text x="455" y="260" font-size="12" text-anchor="middle" fill="#2c3e50">締固め試験</text>
+    </g>
+    
+    <!-- 粒度試験 -->
+    <g id="grain-size">
+      <!-- ふるい -->
+      <rect x="530" y="150" width="60" height="40" fill="white" stroke="#333" stroke-width="2"/>
+      <line x1="535" y1="160" x2="585" y2="160" stroke="#333" stroke-width="1"/>
+      <line x1="535" y1="165" x2="585" y2="165" stroke="#333" stroke-width="1"/>
+      <line x1="535" y1="170" x2="585" y2="170" stroke="#333" stroke-width="1"/>
+      
+      <!-- 粒子 -->
+      <circle cx="545" cy="155" r="3" fill="#8b4513"/>
+      <circle cx="560" cy="157" r="2" fill="#8b4513"/>
+      <circle cx="575" cy="156" r="2.5" fill="#8b4513"/>
+      
+      <!-- 通過粒子 -->
+      <circle cx="550" cy="200" r="1.5" fill="#8b4513"/>
+      <circle cx="565" cy="205" r="1" fill="#8b4513"/>
+      
+      <text x="560" y="230" font-size="12" text-anchor="middle" fill="#2c3e50">粒度試験</text>
+    </g>
+    
+    <!-- 含水比試験 -->
+    <g id="moisture-content">
+      <!-- 容器 -->
+      <ellipse cx="670" cy="170" rx="25" ry="5" fill="#ccc"/>
+      <rect x="645" y="170" width="50" height="30" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+      <ellipse cx="670" cy="200" rx="25" ry="5" fill="#ccc"/>
+      
+      <!-- 試料 -->
+      <ellipse cx="670" cy="185" rx="20" ry="4" fill="#8b4513"/>
+      
+      <!-- 水分 -->
+      <circle cx="660" cy="185" r="2" fill="#3498db"/>
+      <circle cx="670" cy="187" r="2" fill="#3498db"/>
+      <circle cx="680" cy="186" r="2" fill="#3498db"/>
+      
+      <text x="670" y="230" font-size="12" text-anchor="middle" fill="#2c3e50">含水比試験</text>
+    </g>
+  </g>
+  
+  <!-- アスファルト試験 -->
+  <g id="asphalt-test">
+    <rect x="50" y="330" width="700" height="180" fill="white" stroke="#f39c12" stroke-width="2" rx="10"/>
+    <text x="400" y="360" font-size="18" font-weight="bold" text-anchor="middle" fill="#f39c12">
+      アスファルト試験
+    </text>
+    
+    <!-- マーシャル安定度試験 -->
+    <g id="marshall-test">
+      <text x="150" y="390" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+        マーシャル安定度試験
+      </text>
+      
+      <!-- 試験機 -->
+      <rect x="100" y="400" width="100" height="80" fill="#ddd" stroke="#333" stroke-width="2"/>
+      
+      <!-- 供試体 -->
+      <circle cx="150" cy="440" r="25" fill="#333"/>
+      
+      <!-- 荷重 -->
+      <path d="M150 395 L150 410" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowred)"/>
+      <text x="100" y="495" font-size="11" text-anchor="middle" fill="#555">安定度測定</text>
+    </g>
+    
+    <!-- 密度試験 -->
+    <g id="density-test">
+      <text x="350" y="390" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+        密度試験
+      </text>
+      
+      <!-- コア -->
+      <rect x="320" y="410" width="30" height="50" fill="#333" stroke="#333" stroke-width="2"/>
+      <ellipse cx="335" cy="410" rx="15" ry="4" fill="#555"/>
+      
+      <!-- 測定器 -->
+      <rect x="360" y="420" width="40" height="30" fill="white" stroke="#333" stroke-width="2"/>
+      <text x="380" y="440" font-size="16" font-weight="bold" text-anchor="middle" fill="#3498db">2.35</text>
+      
+      <text x="350" y="495" font-size="11" text-anchor="middle" fill="#555">密度測定</text>
+    </g>
+    
+    <!-- 平坦性試験 -->
+    <g id="flatness-test">
+      <text x="550" y="390" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+        平坦性試験
+      </text>
+      
+      <!-- 路面 -->
+      <line x1="480" y1="450" x2="620" y2="450" stroke="#333" stroke-width="3"/>
+      
+      <!-- プロフィルメータ -->
+      <rect x="540" y="410" width="20" height="40" fill="#666" stroke="#333" stroke-width="2"/>
+      <circle cx="550" cy="455" r="5" fill="#333"/>
+      
+      <!-- 測定点 -->
+      <circle cx="500" cy="450" r="3" fill="#e74c3c"/>
+      <circle cx="550" cy="450" r="3" fill="#e74c3c"/>
+      <circle cx="600" cy="450" r="3" fill="#e74c3c"/>
+      
+      <text x="550" y="495" font-size="11" text-anchor="middle" fill="#555">平坦性測定</text>
+    </g>
+  </g>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  
+  <!-- 注記 -->
+  <text x="400" y="560" font-size="12" text-anchor="middle" fill="#666">
+    ※ 品質試験は、JIS規格及び各種示方書に基づき実施
+  </text>
+</svg>
